@@ -259,10 +259,17 @@ body[dir="rtl"] .select-icon {
 }
 
 .item-image {
-    width: 100%;
-    height: 310px;
-    object-fit: cover;
+    width: 100px;
     background: #f8f9fa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img-hight{
+    height: 280px;
+    overflow: hidden;
+    position: relative;
 }
 
 /* Image Lightbox */
