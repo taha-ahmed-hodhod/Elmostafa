@@ -32,12 +32,13 @@ class FurnitureStore {
             this.filterItems(e.target.value);
         });
 
-        // Category filtering
-        document.querySelectorAll('.category-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                this.filterByCategory(e.target.dataset.category);
+        // Category filtering via select
+        const categorySelect = document.getElementById('categorySelect');
+        if (categorySelect) {
+            categorySelect.addEventListener('change', (e) => {
+                this.filterByCategory(e.target.value);
             });
-        });
+        }
 
         // Dashboard add item button
         document.getElementById('addItemBtn').addEventListener('click', () => {
@@ -170,11 +171,11 @@ class FurnitureStore {
     }
 
     filterByCategory(category) {
-        // Update active category button
-        document.querySelectorAll('.category-btn').forEach(btn => {
-            btn.classList.remove('active');
-        });
-        document.querySelector(`[data-category="${category}"]`).classList.add('active');
+        // Sync select value if present
+        const categorySelect = document.getElementById('categorySelect');
+        if (categorySelect) {
+            categorySelect.value = category;
+        }
 
         // Filter items
         const filteredItems = category === 'all'
