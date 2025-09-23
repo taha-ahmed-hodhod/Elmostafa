@@ -40,14 +40,18 @@
 
             <!-- Category Filter -->
             <div class="category-filter">
-                <button class="category-btn active" data-category="all">جميع العناصر</button>
-                <button class="category-btn" data-category="chairs">كراسي</button>
-                <button class="category-btn" data-category="tables">الترابيزات</button>
-                <button class="category-btn" data-category="sofas">السلالم</button>
-                <button class="category-btn" data-category="storage">الشماعات</button>
-                <button class="category-btn" data-category="beds">السراير</button>
-                <button class="category-btn" data-category="desk">المكاتب</button>
-                
+                <div class="category-select-wrapper">
+                    <select id="categorySelect" class="category-select">
+                        <option value="all">جميع العناصر</option>
+                        <option value="chairs">كراسي</option>
+                        <option value="tables">الترابيزات</option>
+                        <option value="sofas">السلالم</option>
+                        <option value="storage">الشماعات</option>
+                        <option value="beds">السراير</option>
+                        <option value="desk">المكاتب</option>
+                    </select>
+                    <span class="select-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
             </div>
             <!-- Items Grid -->
             <div class="items-grid" id="itemsGrid">
