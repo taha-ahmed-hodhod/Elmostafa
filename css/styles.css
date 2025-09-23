@@ -91,6 +91,12 @@ body[dir="rtl"] {
     transform: translateY(-2px);
 }
 
+.btn-reset {
+    border: 1px solid rgba(255,255,255,0.35);
+    background: transparent;
+    cursor: pointer;
+}
+
 /* Main Content */
 main {
     min-height: calc(100vh - 80px);
