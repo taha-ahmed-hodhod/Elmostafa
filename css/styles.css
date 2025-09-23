@@ -265,12 +265,13 @@ body[dir="rtl"] .select-icon {
 }
 
 .item-image {
-    width: 110px;
+    width: 100px;
     background: #f8f9fa;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: transparent;
 }
 .img-hight{
     height: 280px;
