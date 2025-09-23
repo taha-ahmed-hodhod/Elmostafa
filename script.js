@@ -188,7 +188,7 @@ class FurnitureStore {
     renderItems(items = this.items) {
         console.log('Rendering items:', items.length);
         const itemsGrid = document.getElementById('itemsGrid');
-        
+
         if (!itemsGrid) {
             console.error('Items grid not found!');
             return;
@@ -207,8 +207,10 @@ class FurnitureStore {
 
         itemsGrid.innerHTML = items.map(item => `
             <div class="item-card" data-id="${item.id}">
-                <img src="${item.image}" alt="${item.name}" class="item-image" 
+                <div class="img-hight">
+                    <img src="${item.image}" alt="${item.name}" class="item-image" 
                     onerror="this.src='https://via.placeholder.com/300x250?text=No+Image'">
+                </div>
                 <div class="item-content">
                     <h3 class="item-name">${this.currentLanguage === 'ar' && item.arabicName ? item.arabicName : item.name}</h3>
                     <p class="item-number">${this.currentLanguage === 'ar' ? 'الرقم الخاص:' : 'Special Number:'} ${item.number}</p>
@@ -480,7 +482,7 @@ class FurnitureStore {
             'beds': { en: 'Beds', ar: 'السراير' },
             'desk': { en: 'desks', ar: 'المكاتب' }
         };
-        return categories[category] ? categories[category][this.currentLanguage] : category ;
+        return categories[category] ? categories[category][this.currentLanguage] : category;
     };
 
     editItem(itemId) {
@@ -534,7 +536,7 @@ class FurnitureStore {
                     arabicName: "كرسي بار 80 سم بدهر",
                     number: "0001",
                     category: "chairs",
-                    image: "./images/FB_IMG_1757260977727.jpg",
+                    image: "./images/1.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -546,7 +548,7 @@ class FurnitureStore {
                     arabicName: "كرسي بار 60 سم بدهر",
                     number: "0002",
                     category: "chairs",
-                    image: "./images/FB_IMG_1757260977727.jpg",
+                    image: "./images/2.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -558,7 +560,7 @@ class FurnitureStore {
                     arabicName: "كرسي بار 50 سم بدهر",
                     number: "0003",
                     category: "chairs",
-                    image: "./images/FB_IMG_1757260977727.jpg",
+                    image: "./images/3.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -570,7 +572,7 @@ class FurnitureStore {
                     arabicName: "كرسي بار 30 سم بدهر",
                     number: "0004",
                     category: "chairs",
-                    image: "./images/FB_IMG_1757260977727.jpg",
+                    image: "./images/4.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -582,7 +584,7 @@ class FurnitureStore {
                     arabicName: "كرسي بار 80 سم بدون دهر",
                     number: "0005",
                     category: "chairs",
-                    image: "./images/FB_IMG_1757260977727.jpg",
+                    image: "./images/5.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -594,7 +596,7 @@ class FurnitureStore {
                     arabicName: "كرسي بار 60 سم بدون دهر",
                     number: "0006",
                     category: "chairs",
-                    image: "./images/FB_IMG_1757260977727.jpg",
+                    image: "./images/6.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -606,20 +608,20 @@ class FurnitureStore {
                     arabicName: "كرسي بار 50 سم بدون دهر",
                     number: "0007",
                     category: "chairs",
-                    image: "./images/FB_IMG_1757260977727.jpg",
+                    image: "./images/7.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
                     createdAt: new Date().toISOString()
                 },
-                
+
                 {
                     id: this.generateId(),
                     name: "Modern Leather Sofa",
                     arabicName: "كرسي بار 30 سم بدون دهر",
                     number: "0008",
                     category: "chairs",
-                    image: "./images/IMG-20250906-WA0023.jpg",
+                    image: "./images/8.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -631,7 +633,7 @@ class FurnitureStore {
                     arabicName: "كرسي سدايب",
                     number: "0009",
                     category: "chairs",
-                    image: "./images/IMG-20250906-WA0024.jpg",
+                    image: "./images/FB_IMG_1757260977727.jpg",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -643,7 +645,7 @@ class FurnitureStore {
                     arabicName: "كرسي منجد",
                     number: "0010",
                     category: "chairs",
-                    image: "./images/IMG-20250906-WA0020.jpg",
+                    image: "./images/10.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -667,7 +669,7 @@ class FurnitureStore {
                     arabicName: "كرسي فتح وقفل",
                     number: "0012",
                     category: "chairs",
-                    image: "./images/FB_IMG_1757260977727.jpg",
+                    image: "./images/12.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -679,7 +681,7 @@ class FurnitureStore {
                     arabicName: "كرسي شنطة (بحر)",
                     number: "0013",
                     category: "chairs",
-                    image: "./images/FB_IMG_1757260977727.jpg",
+                    image: "./images/13.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -1717,8 +1719,8 @@ class FurnitureStore {
                     sellingPrice: 450.00,
                     createdAt: new Date().toISOString()
                 },
-                
-                
+
+
             ];
 
             this.items = sampleItems;
