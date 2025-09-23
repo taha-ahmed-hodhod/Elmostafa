@@ -77,6 +77,17 @@ class FurnitureStore {
             });
         }
 
+        // Reset data button
+        const resetBtn = document.getElementById('resetDataBtn');
+        if (resetBtn) {
+            resetBtn.addEventListener('click', () => {
+                if (confirm(this.currentLanguage === 'ar' ? 'هل تريد تصفير البيانات وإعادة التحميل؟' : 'Reset data and reload?')) {
+                    localStorage.removeItem('furnitureItems');
+                    location.reload();
+                }
+            });
+        }
+
         // Close modal when clicking outside
         window.addEventListener('click', (e) => {
             const modal = document.getElementById('itemModal');
