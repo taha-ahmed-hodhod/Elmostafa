@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المصطفى هدهد</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="shortcut icon" href="./images/Segment_٢٠٢٥٠٩٠٦_١٣٣٩٤٠٧٥٠.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1> <img src="./images/Segment_٢٠٢٥٠٩٠٦_١٣٣٩٤٠٧٥٠.png" alt="" width="70px"> <span class="brand-text">المصطفى هدهد</span></h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">الرئيسية</a>
+                <a href="#dashboard" class="nav-link">لوحة التحكم</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <!-- <h2>اكتشف الأثاث المذهل</h2>
+                <p>اعثر على القطع المثالية لمنزلك</p> -->
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="البحث بالاسم أو الرقم الخاص...">
+                </div>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="category-btn active" data-category="all">جميع العناصر</button>
+                <button class="category-btn" data-category="chairs">كراسي</button>
+                <button class="category-btn" data-category="tables">الترابيزات</button>
+                <button class="category-btn" data-category="sofas">السلالم</button>
+                <button class="category-btn" data-category="storage">الشماعات</button>
+                <button class="category-btn" data-category="beds">السراير</button>
+                <button class="category-btn" data-category="desk">المكاتب</button>
+                
+            </div>
+            <!-- Items Grid -->
+            <div class="items-grid" id="itemsGrid">
+                <!-- Items will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="section">
+            <div class="dashboard-header">
+                <h2>لوحة التحكم</h2>
+                <button class="btn btn-primary" id="addItemBtn">
+                    <i class="fas fa-plus"></i> <span>إضافة عنصر جديد</span>
+                </button>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="items-list" id="dashboardItemsList">
+                    <!-- Dashboard items will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add/Edit Item Modal -->
+    <div id="itemModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">إضافة عنصر جديد</h3>
+                <span class="close">&times;</span>
+            </div>
+            <form id="itemForm">
+                <div class="form-group">
+                    <label for="itemName">اسم العنصر</label>
+                    <input type="text" id="itemName" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemArabicName">الاسم العربي (اختياري)</label>
+                    <input type="text" id="itemArabicName" placeholder="اكتب الاسم بالعربية">
+                </div>
+                <div class="form-group">
+                    <label for="itemNumber">الرقم الخاص</label>
+                    <input type="text" id="itemNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemCategory">الفئة</label>
+                    <select id="itemCategory" required>
+                        <option value="">اختر الفئة</option>
+                        <option value="chairs">كراسي</option>
+                        <option value="sofas">أرائك</option>
+                        <option value="tables">طاولات</option>
+                        <option value="beds">أسرة</option>
+                        <option value="storage">تخزين</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="itemImage">رفع صورة</label>
+                    <input type="file" id="itemImage" accept="image/*" required>
+                    <div class="file-input-info">
+                        <small>الصيغ المدعومة: JPG, PNG, GIF, WebP (الحد الأقصى: 5 ميجابايت)</small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="itemDescription">الوصف</label>
+                    <textarea id="itemDescription" rows="3"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="itemCommercialPrice">السعر التجاري (جنيه)</label>
+                        <input type="number" id="itemCommercialPrice" step="0.01" min="0" placeholder="0.00" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemSellingPrice">سعر البيع (جنيه)</label>
+                        <input type="number" id="itemSellingPrice" step="0.01" min="0" placeholder="0.00" required>
+                    </div>
+                </div>
+                <div class="price-info" id="priceInfo" style="display: none;">
+                    <div class="profit-margin">
+                        <span class="profit-label">هامش الربح:</span>
+                        <span class="profit-value" id="profitValue">0.00 EGP (0%)</span>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">إلغاء</button>
+                    <button type="submit" class="btn btn-primary">حفظ العنصر</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div id="imageLightbox" class="image-lightbox" aria-hidden="true">
+        <span class="image-lightbox-close" id="imageLightboxClose" aria-label="Close">&times;</span>
+        <img id="lightboxImg" alt="full-size" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
