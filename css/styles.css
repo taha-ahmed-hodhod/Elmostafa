@@ -268,7 +268,7 @@ body[dir="rtl"] .select-icon {
     width: 100px;
     background: #f8f9fa;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
