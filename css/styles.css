@@ -1,3 +1,96 @@
+/* Load more button container */
+.load-more-container {
+    text-align: center;
+    margin: 16px 0 24px;
+}
+
+/* Footer */
+.site-footer {
+    background: #3d5896; /* slate-900 */
+    color: #e2e8f0; /* slate-200 */
+    margin-top: 40px;
+}
+.site-footer .footer-content {
+    padding: 32px 16px;
+}
+.site-footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+.site-footer .footer-brand h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 8px 0;
+}
+.site-footer .footer-tagline {
+    color: #94a3b8; /* slate-400 */
+    margin: 0;
+}
+.site-footer .footer-links h4,
+.site-footer .footer-contact h4 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+.site-footer .footer-links ul,
+.site-footer .footer-contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.site-footer .footer-links li {
+    margin: 6px 0;
+}
+.site-footer .footer-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+.site-footer .footer-links a:hover {
+    color: #60a5fa; /* blue-400 */
+}
+.site-footer .footer-contact li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+}
+.site-footer .footer-contact a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+.site-footer .footer-contact a:hover {
+    color: #60a5fa;
+}
+.site-footer .footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-inline-start: 6px;
+    color: #0f172a;
+    background: #e2e8f0;
+    border-radius: 50%;
+}
+.site-footer .footer-social a:hover {
+    background: #60a5fa;
+    color: #0f172a;
+}
+.site-footer .footer-bottom {
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+    padding: 12px 16px;
+    text-align: center;
+    color: #94a3b8;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .site-footer .footer-grid {
+        grid-template-columns: 2fr 1fr 1.5fr;
+        align-items: start;
+    }
+}
 /* Reset and Base Styles */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
@@ -127,17 +220,6 @@ main {
     position: relative;
     z-index: 10;
 }
-/* .hero::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(245, 193, 49, 0.205);
-    border-radius: 15px;
-    z-index: -1;
-} */
 
 .hero h2 {
     font-size: 2.5rem;
@@ -266,12 +348,11 @@ body[dir="rtl"] .select-icon {
 
 .item-image {
     width: 100px;
-    background: #f8f9fa;
+    background: transparent;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: transparent;
 }
 .img-hight{
     height: 280px;
@@ -426,7 +507,7 @@ body[dir="rtl"] .select-icon {
 .btn {
     padding: 12px 24px;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
     text-decoration: none;
@@ -448,12 +529,13 @@ body[dir="rtl"] .select-icon {
 }
 
 .btn-secondary {
-    background: #6c757d;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     color: white;
+    transition: .3s;
 }
 
 .btn-secondary:hover {
-    background: #5a6268;
+    opacity: 0.8;
 }
 
 .btn-danger {
