@@ -4,6 +4,9 @@ class FurnitureStore {
         this.items = this.loadItems();
         this.currentEditingId = null;
         this.currentLanguage = localStorage.getItem('language') || 'ar';
+        // Pagination state
+        this.itemsPerPage = 9;
+        this.visibleCount = this.itemsPerPage;
         this.init();
     }
 
@@ -29,6 +32,8 @@ class FurnitureStore {
         // Search functionality
         const searchInput = document.getElementById('searchInput');
         searchInput.addEventListener('input', (e) => {
+            // Reset pagination on new search
+            this.visibleCount = this.itemsPerPage;
             this.filterItems(e.target.value);
         });
 
@@ -36,6 +41,8 @@ class FurnitureStore {
         const categorySelect = document.getElementById('categorySelect');
         if (categorySelect) {
             categorySelect.addEventListener('change', (e) => {
+                // Reset pagination on category change
+                this.visibleCount = this.itemsPerPage;
                 this.filterByCategory(e.target.value);
             });
         }
@@ -199,6 +206,7 @@ class FurnitureStore {
     renderItems(items = this.items) {
         console.log('Rendering items:', items.length);
         const itemsGrid = document.getElementById('itemsGrid');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
 
         if (!itemsGrid) {
             console.error('Items grid not found!');
@@ -213,10 +221,17 @@ class FurnitureStore {
                     <p>Try adjusting your search or category filter</p>
                 </div>
             `;
+            if (loadMoreBtn) {
+                loadMoreBtn.style.display = 'none';
+                loadMoreBtn.onclick = null;
+            }
             return;
         }
 
-        itemsGrid.innerHTML = items.map(item => `
+        // Determine how many items to show (respect current visibleCount)
+        const itemsToShow = items.slice(0, this.visibleCount);
+
+        itemsGrid.innerHTML = itemsToShow.map(item => `
             <div class="item-card" data-id="${item.id}">
                 <div class="img-hight">
                     <img src="${item.image}" alt="${item.name}" class="item-image" 
@@ -241,6 +256,21 @@ class FurnitureStore {
                 </div>
             </div>
         `).join('');
+
+        // Setup Load More
+        if (loadMoreBtn) {
+            if (this.visibleCount < items.length) {
+                loadMoreBtn.style.display = 'inline-block';
+                loadMoreBtn.textContent = this.currentLanguage === 'ar' ? 'تحميل المزيد' : 'Load more';
+                loadMoreBtn.onclick = () => {
+                    this.visibleCount += this.itemsPerPage;
+                    this.renderItems(items);
+                };
+            } else {
+                loadMoreBtn.style.display = 'none';
+                loadMoreBtn.onclick = null;
+            }
+        }
     }
 
     renderDashboardItems() {
@@ -418,6 +448,8 @@ class FurnitureStore {
 
         this.saveItems();
         this.closeModal();
+        // Reset pagination after save
+        this.visibleCount = this.itemsPerPage;
         this.renderItems();
         this.renderDashboardItems();
     }
@@ -479,7 +511,8 @@ class FurnitureStore {
             }
         }
 
-        // Re-render items to update language
+        // Re-render items to update language and reset pagination
+        this.visibleCount = this.itemsPerPage;
         this.renderItems();
         this.renderDashboardItems();
     }
@@ -1754,4 +1787,9 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM loaded, initializing app...');
     const furnitureStore = new FurnitureStore();
     window.furnitureStore = furnitureStore;
+    // Footer year
+    const yearSpan = document.getElementById('currentYear');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 });
