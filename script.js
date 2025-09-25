@@ -290,7 +290,7 @@ class FurnitureStore {
         dashboardList.innerHTML = this.items.map(item => `
             <div class="dashboard-item" data-id="${item.id}">
                 <img src="${item.image}" alt="${item.name}" class="dashboard-item-image"
-                    onerror="this.src='https://via.placeholder.com/80x80?text=No+Image'">
+                    onerror="this.src='./images/Segment_٢٠٢٥٠٩٠٦_١٣٣٩٤٠٧٥٠.png'">
                 <div class="dashboard-item-info">
                     <h4 class="dashboard-item-name">${this.currentLanguage === 'ar' && item.arabicName ? item.arabicName : item.name}</h4>
                     <div class="dashboard-item-details">
