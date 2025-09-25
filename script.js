@@ -763,8 +763,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/17.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 320.00,
+                    sellingPrice: 350.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -787,8 +787,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1400.00,
+                    sellingPrice: 1450.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -799,8 +799,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1200.00,
+                    sellingPrice: 1300.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -811,8 +811,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 450.00,
+                    sellingPrice: 500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -823,8 +823,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 450.00,
+                    sellingPrice: 500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -835,8 +835,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 450.00,
+                    sellingPrice: 500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -847,8 +847,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 650.00,
+                    sellingPrice: 700.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -859,8 +859,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 450.00,
+                    sellingPrice: 500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -871,7 +871,7 @@ class FurnitureStore {
                     category: "chairs",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
+                    commercialPrice: 400.00,
                     sellingPrice: 450.00,
                     createdAt: new Date().toISOString()
                 },
@@ -883,8 +883,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 350.00,
+                    sellingPrice: 380.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -895,20 +895,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
-                    createdAt: new Date().toISOString()
-                },
-                {
-                    id: this.generateId(),
-                    name: "",
-                    arabicName: "كرسي تسريحة عدل برجل 40 سم",
-                    number: "0027",
-                    category: "chairs",
-                    image: "",
-                    description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 350.00,
+                    sellingPrice: 380.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -919,8 +907,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1450.00,
+                    sellingPrice: 1550.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -931,8 +919,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1050.00,
+                    sellingPrice: 1150.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -943,8 +931,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1000.00,
+                    sellingPrice: 1100.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -955,8 +943,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1350.00,
+                    sellingPrice: 1450.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -967,20 +955,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
-                    createdAt: new Date().toISOString()
-                },
-                {
-                    id: this.generateId(),
-                    name: "",
-                    arabicName: "ترابيزة مطبخ 120 سم فورميكا",
-                    number: "0032",
-                    category: "tables",
-                    image: "",
-                    description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 950.00,
+                    sellingPrice: 1050.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -991,8 +967,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 900.00,
+                    sellingPrice: 1000.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1003,8 +979,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1200.00,
+                    sellingPrice: 1250.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1015,8 +991,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1100.00,
+                    sellingPrice: 1150.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1027,8 +1003,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 700.00,
+                    sellingPrice: 750.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1327,8 +1303,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 500.00,
+                    sellingPrice: 550.00,
                     createdAt: new Date().toISOString()
                 },
                 {
