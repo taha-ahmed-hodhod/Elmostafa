@@ -235,7 +235,7 @@ class FurnitureStore {
             <div class="item-card" data-id="${item.id}">
                 <div class="img-hight">
                     <img src="${item.image}" alt="${item.name}" class="item-image" 
-                    onerror="this.src='images/Segment_٢٠٢٥٠٩٠٦_١٣٣٩٤٠٧٥٠.png'">
+                    onerror="this.src='./images/Segment_٢٠٢٥٠٩٠٦_١٣٣٩٤٠٧٥٠.png'">
                 </div>
                 <div class="item-content">
                     <h3 class="item-name">${this.currentLanguage === 'ar' && item.arabicName ? item.arabicName : item.name}</h3>
@@ -582,8 +582,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/1.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 480.00,
+                    sellingPrice: 500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -594,8 +594,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/2.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 450.00,
+                    sellingPrice: 480.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -618,8 +618,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/4.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 385.00,
+                    sellingPrice: 400.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -630,8 +630,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/5.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 415.00,
+                    sellingPrice: 430.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -642,8 +642,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/6.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 375.00,
+                    sellingPrice: 400.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -654,8 +654,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/7.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 365.00,
+                    sellingPrice: 380.00,
                     createdAt: new Date().toISOString()
                 },
 
@@ -667,8 +667,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/8.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 325.00,
+                    sellingPrice: 350.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -679,8 +679,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/9.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 500.00,
+                    sellingPrice: 550.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -691,32 +691,32 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/10.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 525.00,
+                    sellingPrice: 550.00,
                     createdAt: new Date().toISOString()
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي منجد جديد دمياط",
                     number: "0011",
                     category: "chairs",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 0.00,
+                    sellingPrice: 0.00,
                     createdAt: new Date().toISOString()
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي فتح وقفل",
                     number: "0012",
                     category: "chairs",
                     image: "./images/12.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 415.00,
+                    sellingPrice: 430.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -727,8 +727,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/13.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 310.00,
+                    sellingPrice: 330.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -739,37 +739,37 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/14.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 725.00,
+                    sellingPrice: 800.00,
                     createdAt: new Date().toISOString()
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي سلم صغير",
                     number: "0015",
                     category: "chairs",
                     image: "./images/15.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 675.00,
+                    sellingPrice: 700.00,
                     createdAt: new Date().toISOString()
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي حضانة زان",
                     number: "0016",
                     category: "chairs",
                     image: "./images/17.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 0.00,
+                    sellingPrice: 0.00,
                     createdAt: new Date().toISOString()
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي حضانة سويد",
                     number: "0017",
                     category: "chairs",
@@ -781,7 +781,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي هزاز كبير",
                     number: "0018",
                     category: "chairs",
@@ -793,7 +793,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي هزاز صغير",
                     number: "0019",
                     category: "chairs",
@@ -805,7 +805,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي سفرة عمر بدهر مفتوح",
                     number: "0020",
                     category: "chairs",
@@ -817,7 +817,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي سفرة عمر فراشة",
                     number: "0021",
                     category: "chairs",
@@ -829,7 +829,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي سفرة بدهر مفتوح",
                     number: "0022",
                     category: "chairs",
@@ -841,7 +841,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي سفرة بدهر زان",
                     number: "0023",
                     category: "chairs",
@@ -853,7 +853,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي سفرة بدهر عدل",
                     number: "0024",
                     category: "chairs",
@@ -865,7 +865,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي سفرة بدهر قديم",
                     number: "0025",
                     category: "chairs",
@@ -877,7 +877,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي تسريحة فراشة برجل 30 سم",
                     number: "0026",
                     category: "chairs",
@@ -889,7 +889,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي تسريحة عدل برجل 40 سم",
                     number: "0027",
                     category: "chairs",
@@ -901,7 +901,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "كرسي تسريحة عدل برجل 40 سم",
                     number: "0027",
                     category: "chairs",
@@ -913,7 +913,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة مطبخ 150 سم زان",
                     number: "0028",
                     category: "tables",
@@ -925,7 +925,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة مطبخ 120 سم زان",
                     number: "0029",
                     category: "tables",
@@ -937,7 +937,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة مطبخ 1 م زان",
                     number: "0030",
                     category: "tables",
@@ -949,7 +949,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة مطبخ 150 سم فورميكا",
                     number: "0031",
                     category: "tables",
@@ -961,7 +961,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة مطبخ 120 سم فورميكا",
                     number: "0032",
                     category: "tables",
@@ -973,7 +973,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة مطبخ 120 سم فورميكا",
                     number: "0032",
                     category: "tables",
@@ -985,7 +985,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة مطبخ 1 م فورميكا",
                     number: "0033",
                     category: "tables",
@@ -997,7 +997,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة مطبخ 120 سم علبة زان",
                     number: "0034",
                     category: "tables",
@@ -1009,7 +1009,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة مطبخ 120 سم علبة فورميكا",
                     number: "0035",
                     category: "tables",
@@ -1021,7 +1021,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة شنطة",
                     number: "0036",
                     category: "tables",
@@ -1033,7 +1033,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة قهوة متر * 60 زان",
                     number: "0037",
                     category: "tables",
@@ -1045,7 +1045,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة قهوة 60 * 80 زان",
                     number: "0038",
                     category: "tables",
@@ -1057,7 +1057,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "طقطوقة قهوة زان",
                     number: "0039",
                     category: "tables",
@@ -1069,7 +1069,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة قهوة متر * 60 سويد",
                     number: "0040",
                     category: "tables",
@@ -1081,7 +1081,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة 40 * 40 واحد دور",
                     number: "0041",
                     category: "tables",
@@ -1093,7 +1093,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة 40 * 60  اتنين دور",
                     number: "0042",
                     category: "tables",
@@ -1105,7 +1105,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة 40 * 80  اتنين دور",
                     number: "0043",
                     category: "tables",
@@ -1117,7 +1117,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة سفرة 6*1",
                     number: "0044",
                     category: "tables",
@@ -1129,7 +1129,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة سفرة 4*1 بيضاوى",
                     number: "0045",
                     category: "tables",
@@ -1141,7 +1141,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة سفرة 4*1 داير",
                     number: "0046",
                     category: "tables",
@@ -1153,7 +1153,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة سفرة فردانى 170*90 بيضاوى",
                     number: "0047",
                     category: "tables",
@@ -1165,7 +1165,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة سفرة دايرة",
                     number: "0048",
                     category: "tables",
@@ -1177,7 +1177,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية صوابع بيضاوى كامل هدهد",
                     number: "0049",
                     category: "tables",
@@ -1189,7 +1189,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية صوابع دائرى هدهد",
                     number: "0050",
                     category: "tables",
@@ -1201,7 +1201,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية صوابع سداسي هدهد",
                     number: "0051",
                     category: "tables",
@@ -1213,7 +1213,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية صوابع مستطيل هدهد",
                     number: "0052",
                     category: "tables",
@@ -1225,7 +1225,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية صوابع نص دايرة هدهد",
                     number: "0053",
                     category: "tables",
@@ -1237,7 +1237,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية صوابع بيضاوى كامل دمياط",
                     number: "0054",
                     category: "tables",
@@ -1249,7 +1249,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية صوابع دائرى دمياط",
                     number: "0055",
                     category: "tables",
@@ -1261,7 +1261,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية صوابع سداسي دمياط",
                     number: "0056",
                     category: "tables",
@@ -1273,7 +1273,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية صوابع مستطيل دمياط",
                     number: "0057",
                     category: "tables",
@@ -1285,7 +1285,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية صوابع نص دايرة (زجزاج) دمياط",
                     number: "0058",
                     category: "tables",
@@ -1297,7 +1297,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية طبق ليزر",
                     number: "0059",
                     category: "tables",
@@ -1309,7 +1309,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "ترابيزة انترية مفرغ",
                     number: "0060",
                     category: "tables",
@@ -1321,7 +1321,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "طقطوقة بورسعيد فورميكا",
                     number: "0061",
                     category: "tables",
@@ -1333,7 +1333,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "طقم 3*1 صوابع",
                     number: "0062",
                     category: "tables",
@@ -1345,7 +1345,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "طقم 3*1 ليزر خفيف",
                     number: "0063",
                     category: "tables",
@@ -1357,7 +1357,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "طقم 3*1 ليزر وسط",
                     number: "0064",
                     category: "tables",
@@ -1369,7 +1369,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "طقم 3*1 ليزر ثقيل",
                     number: "0065",
                     category: "tables",
@@ -1381,7 +1381,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "طقم 3*1 اشكال",
                     number: "0066",
                     category: "tables",
@@ -1393,7 +1393,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "سلم 2 م",
                     number: "0067",
                     category: "sofas",
@@ -1405,7 +1405,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "سلم 150 سم",
                     number: "0068",
                     category: "sofas",
@@ -1417,7 +1417,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "سلم 120 سم",
                     number: "0069",
                     category: "sofas",
@@ -1429,7 +1429,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "سلم 3 م ثقيل",
                     number: "0070",
                     category: "sofas",
@@ -1441,7 +1441,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "سلم 250 سم ثقيل",
                     number: "0071",
                     category: "sofas",
@@ -1453,7 +1453,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "سلم 2 م ثقيل",
                     number: "0072",
                     category: "sofas",
@@ -1465,7 +1465,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة مراية كبيرة",
                     number: "0073",
                     category: "storage",
@@ -1477,7 +1477,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة مراية لف",
                     number: "0074",
                     category: "storage",
@@ -1489,7 +1489,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة مراية صغيرة",
                     number: "0075",
                     category: "storage",
@@ -1501,7 +1501,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة عجينة",
                     number: "0076",
                     category: "storage",
@@ -1513,7 +1513,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة مربعة زان تشتطيب كونتر",
                     number: "0077",
                     category: "storage",
@@ -1525,7 +1525,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة مربعة زان تشتطيب زان",
                     number: "0078",
                     category: "storage",
@@ -1537,7 +1537,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة سويد 2 طبق",
                     number: "0079",
                     category: "storage",
@@ -1549,7 +1549,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة مدورة زان بقاعدة طبق",
                     number: "0080",
                     category: "storage",
@@ -1561,7 +1561,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة سويد تقيلة",
                     number: "0081",
                     category: "storage",
@@ -1573,7 +1573,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة مشيشة خفيفة",
                     number: "0082",
                     category: "storage",
@@ -1585,7 +1585,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة علبة خفيفة",
                     number: "0083",
                     category: "storage",
@@ -1597,7 +1597,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة علبة ثقيلة",
                     number: "0084",
                     category: "storage",
@@ -1609,7 +1609,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة دايرة زان تشطيب كونتر",
                     number: "0085",
                     category: "storage",
@@ -1621,7 +1621,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "شماعة مراية بدرج",
                     number: "0086",
                     category: "storage",
@@ -1633,7 +1633,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "سرير سندوتش",
                     number: "0087",
                     category: "beds",
@@ -1645,7 +1645,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "سرير باكم هزاز",
                     number: "0088",
                     category: "beds",
@@ -1657,7 +1657,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "سرير كمنجا خفيف هزاز",
                     number: "0089",
                     category: "beds",
@@ -1669,7 +1669,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "سرير 120 سم سويد خفيف",
                     number: "0090",
                     category: "beds",
@@ -1681,7 +1681,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "سرير 120 سم سويد تقيل",
                     number: "0091",
                     category: "beds",
@@ -1693,7 +1693,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "مكتب 80 سم مدهون",
                     number: "0092",
                     category: "desk",
@@ -1705,7 +1705,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "مكتب 80 سم ابيض",
                     number: "0093",
                     category: "desk",
@@ -1717,7 +1717,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "مكتب 1 م مدهون",
                     number: "0094",
                     category: "desk",
@@ -1729,7 +1729,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "مكتب 1 م ابيض",
                     number: "0095",
                     category: "desk",
@@ -1741,7 +1741,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "مكتب 120 سم مدهون",
                     number: "0096",
                     category: "desk",
@@ -1753,7 +1753,7 @@ class FurnitureStore {
                 },
                 {
                     id: this.generateId(),
-                    name: "Modern Leather Sofa",
+                    name: "",
                     arabicName: "مكتب 120 سم ابيض",
                     number: "0097",
                     category: "desk",
