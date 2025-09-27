@@ -4,6 +4,14 @@ class FurnitureStore {
         this.items = this.loadItems();
         this.currentEditingId = null;
         this.currentLanguage = localStorage.getItem('language') || 'ar';
+        // Check for saved preference first, then fall back to system preference
+        const savedTheme = localStorage.getItem('darkMode');
+        if (savedTheme !== null) {
+            this.isDarkMode = savedTheme === 'true';
+        } else {
+            // Detect system preference
+            this.isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
         // Pagination state
         this.itemsPerPage = 9;
         this.visibleCount = this.itemsPerPage;
@@ -13,6 +21,7 @@ class FurnitureStore {
     init() {
         console.log('Initializing Furniture Store...');
         this.setLanguage(this.currentLanguage);
+        this.initDarkMode();
         this.bindEvents();
         this.renderItems();
         this.renderDashboardItems();
@@ -81,6 +90,26 @@ class FurnitureStore {
         if (languageToggle) {
             languageToggle.addEventListener('click', () => {
                 this.toggleLanguage();
+            });
+        }
+
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', () => {
+                this.toggleDarkMode();
+            });
+            
+            // Double-click to reset to system theme
+            darkModeToggle.addEventListener('dblclick', () => {
+                this.resetToSystemTheme();
+                // Show a brief message
+                this.showMessage(
+                    this.currentLanguage === 'ar' 
+                        ? 'تم إعادة تعيين الوضع إلى إعدادات النظام' 
+                        : 'Theme reset to system preference', 
+                    'success'
+                );
             });
         }
 
@@ -515,6 +544,7 @@ class FurnitureStore {
         this.visibleCount = this.itemsPerPage;
         this.renderItems();
         this.renderDashboardItems();
+        this.updateDarkModeIcon();
     }
 
     getCategoryName(category) {
@@ -989,7 +1019,7 @@ class FurnitureStore {
                     arabicName: "ترابيزة مطبخ 120 سم علبة فورميكا",
                     number: "0035",
                     category: "tables",
-                    image: "./images/32.png",
+                    image: "./images/31.png",
                     description: "",
                     commercialPrice: 1100.00,
                     sellingPrice: 1150.00,
@@ -1959,6 +1989,111 @@ class FurnitureStore {
 
     saveItems() {
         localStorage.setItem('furnitureItems', JSON.stringify(this.items));
+    }
+
+    initDarkMode() {
+        // Apply dark mode on page load
+        if (this.isDarkMode) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+        this.updateDarkModeIcon();
+        
+        // Listen for system theme changes
+        this.setupSystemThemeListener();
+    }
+
+    setupSystemThemeListener() {
+        // Only listen to system changes if user hasn't manually set a preference
+        const savedTheme = localStorage.getItem('darkMode');
+        if (savedTheme === null) {
+            const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            
+            const handleSystemThemeChange = (e) => {
+                // Only update if user hasn't manually set a preference
+                if (localStorage.getItem('darkMode') === null) {
+                    this.isDarkMode = e.matches;
+                    if (this.isDarkMode) {
+                        document.documentElement.setAttribute('data-theme', 'dark');
+                    } else {
+                        document.documentElement.setAttribute('data-theme', 'light');
+                    }
+                    this.updateDarkModeIcon();
+                }
+            };
+
+            // Add listener for system theme changes
+            if (mediaQuery.addEventListener) {
+                mediaQuery.addEventListener('change', handleSystemThemeChange);
+            } else {
+                // Fallback for older browsers
+                mediaQuery.addListener(handleSystemThemeChange);
+            }
+        }
+    }
+
+    toggleDarkMode() {
+        this.isDarkMode = !this.isDarkMode;
+        localStorage.setItem('darkMode', this.isDarkMode);
+        
+        if (this.isDarkMode) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+        
+        this.updateDarkModeIcon();
+    }
+
+    resetToSystemTheme() {
+        // Clear manual preference and use system theme
+        localStorage.removeItem('darkMode');
+        this.isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (this.isDarkMode) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+        
+        this.updateDarkModeIcon();
+        this.setupSystemThemeListener();
+    }
+
+    updateDarkModeIcon() {
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        if (darkModeToggle) {
+            const icon = darkModeToggle.querySelector('i');
+            if (icon) {
+                const savedTheme = localStorage.getItem('darkMode');
+                const isSystemTheme = savedTheme === null;
+                
+                if (this.isDarkMode) {
+                    icon.className = 'fas fa-sun';
+                    if (isSystemTheme) {
+                        darkModeToggle.title = this.currentLanguage === 'ar' 
+                            ? 'الوضع المظلم (إعدادات النظام) - انقر نقرتين لإعادة التعيين' 
+                            : 'Dark Mode (System) - Double-click to reset';
+                    } else {
+                        darkModeToggle.title = this.currentLanguage === 'ar' 
+                            ? 'تبديل الوضع المضيء - انقر نقرتين لإعادة تعيين النظام' 
+                            : 'Switch to Light Mode - Double-click to reset to system';
+                    }
+                } else {
+                    icon.className = 'fas fa-moon';
+                    if (isSystemTheme) {
+                        darkModeToggle.title = this.currentLanguage === 'ar' 
+                            ? 'الوضع المضيء (إعدادات النظام) - انقر نقرتين لإعادة التعيين' 
+                            : 'Light Mode (System) - Double-click to reset';
+                    } else {
+                        darkModeToggle.title = this.currentLanguage === 'ar' 
+                            ? 'تبديل الوضع المظلم - انقر نقرتين لإعادة تعيين النظام' 
+                            : 'Switch to Dark Mode - Double-click to reset to system';
+                    }
+                }
+            }
+        }
     }
 }
 
