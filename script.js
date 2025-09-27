@@ -989,7 +989,7 @@ class FurnitureStore {
                     arabicName: "ترابيزة مطبخ 120 سم علبة فورميكا",
                     number: "0035",
                     category: "tables",
-                    image: "./images/31.png",
+                    image: "./images/32.png",
                     description: "",
                     commercialPrice: 1100.00,
                     sellingPrice: 1150.00,
