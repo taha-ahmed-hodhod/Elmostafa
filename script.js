@@ -1913,7 +1913,7 @@ class FurnitureStore {
                     arabicName: "ترابيزة انترية مصبعة (مشيشة) بدرج",
                     number: "0112",
                     category: "tables",
-                    image: "./images/112.png",
+                    image: "",
                     description: "",
                     commercialPrice: 1150.00,
                     sellingPrice: 1250.00,
