@@ -1,4 +1,19 @@
 // Furniture Store Application
+// Scroll to Top Button functionality
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    if (!scrollBtn) return;
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            scrollBtn.classList.add('show');
+        } else {
+            scrollBtn.classList.remove('show');
+        }
+    });
+    scrollBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
 class FurnitureStore {
     constructor() {
         this.items = this.loadItems();
@@ -1595,7 +1610,7 @@ class FurnitureStore {
                     arabicName: "شماعة علبة خفيفة",
                     number: "0083",
                     category: "storage",
-                    image: "./images/83.png",
+                    image: "",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
@@ -1943,7 +1958,7 @@ class FurnitureStore {
                     arabicName: "ترابيزة انترية مصبعة (مشيشة) بدرج",
                     number: "0112",
                     category: "tables",
-                    image: "",
+                    image: "./images/112.png",
                     description: "",
                     commercialPrice: 1150.00,
                     sellingPrice: 1250.00,
