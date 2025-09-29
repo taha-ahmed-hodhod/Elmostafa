@@ -22,7 +22,7 @@
     --warning-color: #ffc107;
     --info-color: #17a2b8;
     --scroll-top-bg: #667eea;
-    --scroll-top-bg-dark: #22223b;
+    --scroll-top-bg-dark: linear-gradient(135deg, #667eea, #764ba2);
     --scroll-top-color: #fff;
 }
 
@@ -1133,3 +1133,4 @@ body[dir="rtl"] .form-actions {
     color: #721c24;
     border: 1px solid #f5c6cb;
 }
+
