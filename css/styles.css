@@ -21,6 +21,47 @@
     --danger-color: #dc3545;
     --warning-color: #ffc107;
     --info-color: #17a2b8;
+    --scroll-top-bg: #667eea;
+    --scroll-top-bg-dark: #22223b;
+    --scroll-top-color: #fff;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 32px;
+    left: 32px;
+    z-index: 1000;
+    background: var(--scroll-top-bg);
+    color: var(--scroll-top-color);
+    border: none;
+    outline: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px var(--shadow-medium);
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, background 0.3s;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollToTopBtn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#scrollToTopBtn:hover {
+    background: var(--accent-secondary);
+}
+
+[data-theme="dark"] #scrollToTopBtn {
+    background: var(--scroll-top-bg-dark);
+    color: var(--scroll-top-color);
 }
 
 /* Dark Theme Colors */
@@ -67,7 +108,7 @@
 
 /* Footer */
 .site-footer {
-    background: #0f172a;
+    background: #1c2c50;
     color: #fff;
     margin-top: 40px;
     border-top: 1px solid var(--border-color);
