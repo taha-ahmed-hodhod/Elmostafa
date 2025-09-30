@@ -351,16 +351,17 @@ main {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 5rem 0;
+    padding: 5rem ;
     background-image: url("../images/Screenshot_٢٠٢٥٠٩٠٧_١٩١١٠٠.jpg");
     background-size: cover;
-    background-position: 50%;
+    background-position: 52.5%;
     color: white;
     border-radius: 5px;
     margin-bottom: 2rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     position: relative;
     z-index: 10;
+    height: 237px;
 }
 
 .hero h2 {
@@ -1091,6 +1092,11 @@ body[dir="rtl"] .form-actions {
     .form-row {
         grid-template-columns: 1fr 1fr;
         gap: 0.5rem;
+    }
+    .hero{
+
+        height: 140px;
+        padding: 0;
     }
 }
 
