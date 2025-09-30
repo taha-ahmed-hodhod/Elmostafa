@@ -1367,7 +1367,7 @@ class FurnitureStore {
                     arabicName: "طقم 3*1 صوابع",
                     number: "0062",
                     category: "tables",
-                    image: "",
+                    image: "./images/62.png",
                     description: "",
                     commercialPrice: 430.00,
                     sellingPrice: 450.00,
