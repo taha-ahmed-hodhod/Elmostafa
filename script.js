@@ -13,6 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollBtn.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    // Welcome Notification
+    const welcome = document.getElementById('welcomeNotification');
+    if (welcome) {
+        welcome.style.display = 'flex';
+        setTimeout(() => {
+            welcome.style.display = 'none';
+        }, 3000);
+    }
 });
 class FurnitureStore {
     constructor() {
