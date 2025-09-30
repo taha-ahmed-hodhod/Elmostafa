@@ -28,7 +28,7 @@ class FurnitureStore {
             this.isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
         }
         // Pagination state
-        this.itemsPerPage = 9;
+        this.itemsPerPage = 12;
         this.visibleCount = this.itemsPerPage;
         this.init();
     }
