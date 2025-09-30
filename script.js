@@ -1997,6 +1997,126 @@ class FurnitureStore {
                     sellingPrice: 750.00,
                     createdAt: new Date().toISOString()
                 },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية كريستالا بيضاوى",
+                    number: "0115",
+                    category: "tables",
+                    image: "./images/115.png",
+                    description: "",
+                    commercialPrice: 1100.00,
+                    sellingPrice: 1200.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية  كريستالا سداسى",
+                    number: "0116",
+                    category: "tables",
+                    image: "./images/116.png",
+                    description: "",
+                    commercialPrice: 1100.00,
+                    sellingPrice: 1200.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية حزام بيضاوى",
+                    number: "0117",
+                    category: "tables",
+                    image: "./images/117.png",
+                    description: "",
+                    commercialPrice: 0.00,
+                    sellingPrice: 0.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية حزام سداسى", 
+                    number: "0118",
+                    category: "tables",
+                    image: "./images/118.png",
+                    description: "",
+                    commercialPrice: 0.00,
+                    sellingPrice: 0.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية حزام دايرة",
+                    number: "0119",
+                    category: "tables",
+                    image: "./images/119.png",
+                    description: "",
+                    commercialPrice: 0.00,
+                    sellingPrice: 0.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية دق لوكانز",
+                    number: "0120",
+                    category: "tables",
+                    image: "./images/120.png",
+                    description: "",
+                    commercialPrice: 1250.00,
+                    sellingPrice: 1350.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية سوستة هدهد",
+                    number: "0121",
+                    category: "tables",
+                    image: "./images/121.png",
+                    description: "",
+                    commercialPrice: 750.00,
+                    sellingPrice: 850.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية تقيلة هدهد",
+                    number: "0122",
+                    category: "tables",
+                    image: "./images/122.png",
+                    description: "",
+                    commercialPrice: 750.00,
+                    sellingPrice: 850.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية ديانا دايرة تقيلة",
+                    number: "0123",
+                    category: "tables",
+                    image: "./images/123.png",
+                    description: "",
+                    commercialPrice: 1500.00,
+                    sellingPrice: 1600.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية ديانا دايرة خفيفة",
+                    number: "0124",
+                    category: "tables",
+                    image: "./images/124.png",
+                    description: "",
+                    commercialPrice: 1200.00,
+                    sellingPrice: 1300.00,
+                    createdAt: new Date().toISOString()
+                },
 
 
             ];
