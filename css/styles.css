@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
-
 /* CSS Variables for Theme Management */
 :root {
     /* Light Theme Colors */
@@ -25,7 +24,78 @@
     --scroll-top-bg-dark: linear-gradient(135deg, #667eea, #764ba2);
     --scroll-top-color: #fff;
 }
+/* Dark Theme Colors */
+[data-theme="dark"] {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-tertiary: #404040;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --text-muted: #808080;
+    --border-color: #404040;
+    --shadow-light: rgba(0,0,0,0.3);
+    --shadow-medium: rgba(0,0,0,0.5);
+    --shadow-heavy: rgba(0,0,0,0.7);
+    --accent-primary: #8b9cff;
+    --accent-secondary: #a855f7;
+    --accent-gradient: linear-gradient(135deg, #8b9cff, #a855f7);
+    --navbar-gradient: radial-gradient(circle,rgba(100, 50, 150, 0.8) 0%, rgba(50, 100, 200, 0.8) 100%);
+    --success-color: #4ade80;
+    --danger-color: #f87171;
+    --warning-color: #fbbf24;
+    --info-color: #60a5fa;
+    --footer-color:  #0f172a;
+}
 
+/* Custom Welcome Notification */
+.custom-notification {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px var(--shadow-medium);
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    z-index: 2000;
+    font-size: 1.2rem;
+    border: 2px solid var(--accent-primary);
+    min-width: 280px;
+    max-width: 90vw;
+    animation: fadeInDown 0.7s;
+}
+
+.custom-notification .notification-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-primary);
+    background: #fff;
+}
+
+.custom-notification .notification-text {
+    font-weight: 600;
+    font-family: 'Cairo', sans-serif;
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translate(-50%, -40px); }
+    100% { opacity: 1; transform: translate(-50%, 0); }
+}
+
+[data-theme="dark"] .custom-notification {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-color: var(--accent-secondary);
+}
+.mohamed {
+    color: var(--accent-primary);
+}
 /* Scroll to Top Button */
 #scrollToTopBtn {
     position: fixed;
@@ -64,28 +134,6 @@
     color: var(--scroll-top-color);
 }
 
-/* Dark Theme Colors */
-[data-theme="dark"] {
-    --bg-primary: #1a1a1a;
-    --bg-secondary: #2d2d2d;
-    --bg-tertiary: #404040;
-    --text-primary: #ffffff;
-    --text-secondary: #b3b3b3;
-    --text-muted: #808080;
-    --border-color: #404040;
-    --shadow-light: rgba(0,0,0,0.3);
-    --shadow-medium: rgba(0,0,0,0.5);
-    --shadow-heavy: rgba(0,0,0,0.7);
-    --accent-primary: #8b9cff;
-    --accent-secondary: #a855f7;
-    --accent-gradient: linear-gradient(135deg, #8b9cff, #a855f7);
-    --navbar-gradient: radial-gradient(circle,rgba(100, 50, 150, 0.8) 0%, rgba(50, 100, 200, 0.8) 100%);
-    --success-color: #4ade80;
-    --danger-color: #f87171;
-    --warning-color: #fbbf24;
-    --info-color: #60a5fa;
-    --footer-color:  #0f172a;
-}
 
 /* Dark mode specific styles */
 [data-theme="dark"] .item-card:hover {
