@@ -1069,8 +1069,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/37.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 850.00,
+                    sellingPrice: 950.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1081,8 +1081,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/38.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 750.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1093,8 +1093,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/39.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 450.00,
+                    sellingPrice: 550.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1105,8 +1105,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/40.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 750.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1117,8 +1117,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/41.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 650.00,
+                    sellingPrice: 750.00,
                     createdAt: new Date().toISOString()
                 },
                 {
