@@ -2430,8 +2430,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/149.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 1200.00,
+                    sellingPrice: 1250.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2454,8 +2454,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/151.png",
                     description: "",
-                    commercialPrice: 750.00,
-                    sellingPrice: 850.00,
+                    commercialPrice: 1200.00,
+                    sellingPrice: 1250.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2816,6 +2816,42 @@ class FurnitureStore {
                     description: "",
                     commercialPrice: 1650.00,
                     sellingPrice: 1750.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف داير",
+                    number: "0182",
+                    category: "chairs",
+                    image: "./images/182.png",
+                    description: "",
+                    commercialPrice: 225.00,
+                    sellingPrice: 250.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف داير بدهر",
+                    number: "0183",
+                    category: "chairs",
+                    image: "./images/183.png",
+                    description: "",
+                    commercialPrice: 275.00,
+                    sellingPrice: 300.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف مربع",
+                    number: "0184",
+                    category: "chairs",
+                    image: "./images/184.png",
+                    description: "",
+                    commercialPrice: 225.00,
+                    sellingPrice: 250.00,
                     createdAt: new Date().toISOString()
                 },
 
