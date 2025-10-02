@@ -1,6 +1,15 @@
-// Furniture Store Application
-// Scroll to Top Button functionality
-document.addEventListener('DOMContentLoaded', function () {
+// ====== Utilities ======
+function showWelcomeNotification() {
+    const welcome = document.getElementById('welcomeNotification');
+    if (welcome) {
+        welcome.style.display = 'flex';
+        setTimeout(() => {
+            welcome.style.display = 'none';
+        }, 5000);
+    }
+}
+
+function setupScrollToTopBtn() {
     const scrollBtn = document.getElementById('scrollToTopBtn');
     if (!scrollBtn) return;
     window.addEventListener('scroll', function () {
@@ -13,16 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollBtn.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-
-    // Welcome Notification
-    const welcome = document.getElementById('welcomeNotification');
-    if (welcome) {
-        welcome.style.display = 'flex';
-        setTimeout(() => {
-            welcome.style.display = 'none';
-        }, 3000);
-    }
-});
+}
 class FurnitureStore {
     constructor() {
         this.items = this.loadItems();
@@ -578,7 +578,8 @@ class FurnitureStore {
             'sofas': { en: 'Sofas', ar: 'السلالم' },
             'storage': { en: 'Storage', ar: 'الشماعات' },
             'beds': { en: 'Beds', ar: 'السراير' },
-            'desk': { en: 'desks', ar: 'المكاتب' }
+            'desk': { en: 'desks', ar: 'المكاتب' },
+            'boxs': { en: 'boxs', ar: 'الجزامات' }
         };
         return categories[category] ? categories[category][this.currentLanguage] : category;
     };
@@ -901,8 +902,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/23.png",
                     description: "",
-                    commercialPrice: 650.00,
-                    sellingPrice: 700.00,
+                    commercialPrice: 550.00,
+                    sellingPrice: 600.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2453,6 +2454,354 @@ class FurnitureStore {
                     sellingPrice: 750.00,
                     createdAt: new Date().toISOString()
                 },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة مربعة دق",
+                    number: "0153",
+                    category: "tables",
+                    image: "./images/153.png",
+                    description: "",
+                    commercialPrice: 600.00,
+                    sellingPrice: 650.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة دايرة دق تقيلة",
+                    number: "0154",
+                    category: "tables",
+                    image: "./images/154.png",
+                    description: "",
+                    commercialPrice: 1500.00,
+                    sellingPrice: 1700.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة مربعة 2 مخ",
+                    number: "0155",
+                    category: "tables",
+                    image: "./images/155.png",
+                    description: "",
+                    commercialPrice: 700.00,
+                    sellingPrice: 750.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة دايرة 2 مخ",
+                    number: "0156",
+                    category: "tables",
+                    image: "./images/156.png",
+                    description: "",
+                    commercialPrice: 700.00,
+                    sellingPrice: 750.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة دايرة 90 سم",
+                    number: "0157",
+                    category: "tables",
+                    image: "./images/157.png",
+                    description: "",
+                    commercialPrice: 550.00,
+                    sellingPrice: 600.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة مربعة 90 سم",
+                    number: "0158",
+                    category: "tables",
+                    image: "./images/158.png",
+                    description: "",
+                    commercialPrice: 550.00,
+                    sellingPrice: 600.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة سادة",
+                    number: "0159",
+                    category: "tables",
+                    image: "./images/159.png",
+                    description: "",
+                    commercialPrice: 450.00,
+                    sellingPrice: 550.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة 2 زهرة",
+                    number: "0160",
+                    category: "tables",
+                    image: "./images/160.png",
+                    description: "",
+                    commercialPrice: 400.00,
+                    sellingPrice: 450.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة شميزة",
+                    number: "0161",
+                    category: "tables",
+                    image: "./images/161.png",
+                    description: "",
+                    commercialPrice: 450.00,
+                    sellingPrice: 500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة مروحة",
+                    number: "0162",
+                    category: "tables",
+                    image: "./images/162.png",
+                    description: "",
+                    commercialPrice: 600.00,
+                    sellingPrice: 600.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة دايرة كورة",
+                    number: "0163",
+                    category: "tables",
+                    image: "./images/163.png",
+                    description: "",
+                    commercialPrice: 500.00,
+                    sellingPrice: 550.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة سداسي خفيفة",
+                    number: "0164",
+                    category: "tables",
+                    image: "./images/164.png",
+                    description: "",
+                    commercialPrice: 350.00,
+                    sellingPrice: 400.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية دايرة قشرة",
+                    number: "0165",
+                    category: "tables",
+                    image: "./images/165.png",
+                    description: "",
+                    commercialPrice: 550.00,
+                    sellingPrice: 650.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية حلقة بيضاوى بدرج",
+                    number: "0166",
+                    category: "tables",
+                    image: "./images/166.png",
+                    description: "",
+                    commercialPrice: 1500.00,
+                    sellingPrice: 1700.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة سفرة دايرة 4 كرسي",
+                    number: "0167",
+                    category: "tables",
+                    image: "./images/167.png",
+                    description: "",
+                    commercialPrice: 2300.00,
+                    sellingPrice: 2500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة سفرة دايرة وسط برجل قرطاس",
+                    number: "0168",
+                    category: "tables",
+                    image: "",
+                    description: "",
+                    commercialPrice: 0.00,
+                    sellingPrice: 0.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة سفرة بيضاوى وسط 150*80",
+                    number: "0169",
+                    category: "tables",
+                    image: "",
+                    description: "",
+                    commercialPrice: 0.00,
+                    sellingPrice: 0.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة الرحمة 80 * 80",
+                    number: "0170",
+                    category: "tables",
+                    image: "./images/170.png",
+                    description: "",
+                    commercialPrice: 1350.00,
+                    sellingPrice: 1500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة الرحمة 80 * 120",
+                    number: "0171",
+                    category: "tables",
+                    image: "./images/171.png",
+                    description: "",
+                    commercialPrice: 1450.00,
+                    sellingPrice: 1650.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة الرحمة 80 * 160",
+                    number: "0172",
+                    category: "tables",
+                    image: "./images/172.png",
+                    description: "",
+                    commercialPrice: 1550.00,
+                    sellingPrice: 1750.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة شاشة 5 درج",
+                    number: "0173",
+                    category: "tables",
+                    image: "./images/173.png",
+                    description: "",
+                    commercialPrice: 2000.00,
+                    sellingPrice: 2100.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة شاشة الحسينى درفة واحدة",
+                    number: "0174",
+                    category: "tables",
+                    image: "./images/174.png",
+                    description: "",
+                    commercialPrice: 1400.00,
+                    sellingPrice: 1500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة شاشة فايبر 2 درج ودرفة",
+                    number: "0175",
+                    category: "tables",
+                    image: "./images/175.png",
+                    description: "",
+                    commercialPrice: 2000.00,
+                    sellingPrice: 2200.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة شاشة 2 درفة مشطوفة",
+                    number: "0176",
+                    category: "tables",
+                    image: "./images/176.png",
+                    description: "",
+                    commercialPrice: 1500.00,
+                    sellingPrice: 1700.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة شاشة صوابع 2 درج",
+                    number: "0177",
+                    category: "tables",
+                    image: "./images/177.png",
+                    description: "",
+                    commercialPrice: 1800.00,
+                    sellingPrice: 1900.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة شاشة ستيل دوران",
+                    number: "0178",
+                    category: "tables",
+                    image: "./images/178.png",
+                    description: "",
+                    commercialPrice: 1500.00,
+                    sellingPrice: 1600.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة شاشة الحسيني 2 رف 2 درج",
+                    number: "0179",
+                    category: "tables",
+                    image: "./images/179.png",
+                    description: "",
+                    commercialPrice: 1400.00,
+                    sellingPrice: 1500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كرسي سلم درجة واحدة قلاب",
+                    number: "0180",
+                    category: "chairs",
+                    image: "./images/180.png",
+                    description: "",
+                    commercialPrice: 0.00,
+                    sellingPrice: 0.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "شيزلونج بانكت مدقوق",
+                    number: "0181",
+                    category: "chairs",
+                    image: "./images/181.png",
+                    description: "",
+                    commercialPrice: 1650.00,
+                    sellingPrice: 1750.00,
+                    createdAt: new Date().toISOString()
+                },
 
 
             ];
@@ -2577,9 +2926,10 @@ class FurnitureStore {
     }
 }
 
-// Initialize the application when DOM is ready
+// ====== Initialize App on DOM Ready ======
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM loaded, initializing app...');
+    showWelcomeNotification();
+    setupScrollToTopBtn();
     const furnitureStore = new FurnitureStore();
     window.furnitureStore = furnitureStore;
     // Footer year
