@@ -304,7 +304,7 @@ class FurnitureStore {
             <div class="item-card" data-id="${item.id}">
                 <div class="img-hight">
                     <img src="${item.image}" alt="${item.name}" class="item-image" 
-                    onerror="this.src='./images/Segment_٢٠٢٥٠٩٠٦_١٣٣٩٤٠٧٥٠.png'">
+                    onerror="this.src='./images/Segment_٢٠٢٥٠٩٠٦_١٣٣٩٤٠٧٥٠.png'" loading="lazy">
                 </div>
                 <div class="item-content">
                     <h3 class="item-name">${this.currentLanguage === 'ar' && item.arabicName ? item.arabicName : item.name}</h3>
@@ -359,7 +359,7 @@ class FurnitureStore {
         dashboardList.innerHTML = this.items.map(item => `
             <div class="dashboard-item" data-id="${item.id}">
                 <img src="${item.image}" alt="${item.name}" class="dashboard-item-image"
-                    onerror="this.src='./images/Segment_٢٠٢٥٠٩٠٦_١٣٣٩٤٠٧٥٠.png'">
+                    onerror="this.src='./images/Segment_٢٠٢٥٠٩٠٦_١٣٣٩٤٠٧٥٠.png'" loading="lazy">
                 <div class="dashboard-item-info">
                     <h4 class="dashboard-item-name">${this.currentLanguage === 'ar' && item.arabicName ? item.arabicName : item.name}</h4>
                     <div class="dashboard-item-details">
