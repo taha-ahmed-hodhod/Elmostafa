@@ -246,6 +246,22 @@ class FurnitureStore {
         const categorySelect = document.getElementById('categorySelect');
         if (categorySelect) {
             categorySelect.value = category;
+            // تحديث عدد المنتجات بجانب اسم الفئة
+            const options = categorySelect.options;
+            // حساب عدد المنتجات لكل فئة
+            const counts = {};
+            this.items.forEach(item => {
+                counts[item.category] = (counts[item.category] || 0) + 1;
+            });
+            for (let i = 0; i < options.length; i++) {
+                const opt = options[i];
+                if (opt.value === 'all') {
+                    opt.textContent = this.currentLanguage === 'ar' ? `جميع العناصر (${this.items.length})` : `All Items (${this.items.length})`;
+                } else {
+                    const count = counts[opt.value] || 0;
+                    opt.textContent = `${this.getCategoryName(opt.value)} (${count})`;
+                }
+            }
         }
 
         // Filter items
