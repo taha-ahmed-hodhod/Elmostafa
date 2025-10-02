@@ -70,8 +70,8 @@
 }
 
 .custom-notification .notification-img {
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--accent-primary);
@@ -1143,7 +1143,7 @@ body[dir="rtl"] .form-actions {
     }
     .hero{
 
-        height: 138px;
+        height: 140px;
         padding: 0;
     }
 }
