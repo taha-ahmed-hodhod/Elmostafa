@@ -2852,7 +2852,7 @@ class FurnitureStore {
                     description: "",
                     commercialPrice: 225.00,
                     sellingPrice: 250.00,
-                    createdAt: newDate().toISOString()
+                    createdAt: new Date().toISOString()
                 },
                 {
                     id: this.generateId(),
@@ -2863,7 +2863,7 @@ class FurnitureStore {
                     image: "./images/185.png",
                     description: "",
                     commercialPrice: 550.00,
-                    sellingPrice: 650.00,
+                    sellingPrice: 0.00,
                     createdAt: new Date().toISOString()
                 },
 
