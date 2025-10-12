@@ -755,7 +755,7 @@ class FurnitureStore {
                     image: "./images/9.png",
                     description: "",
                     commercialPrice: 500.00,
-                    sellingPrice: 550.00,
+                    sellingPrice: 530.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -850,8 +850,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/17.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 0.00,
+                    sellingPrice: 0.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1090,8 +1090,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/37.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 850.00,
+                    sellingPrice: 950.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1102,8 +1102,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/38.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 750.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1114,8 +1114,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/39.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 450.00,
+                    sellingPrice: 500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1126,8 +1126,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/40.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 750.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1138,8 +1138,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/41.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 650.00,
+                    sellingPrice: 750.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1150,8 +1150,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/42.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 700.00,
+                    sellingPrice: 800.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1162,8 +1162,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/43.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 750.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1174,8 +1174,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/44.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 3500.00,
+                    sellingPrice: 3500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1186,8 +1186,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/45.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 2500.00,
+                    sellingPrice: 2500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1198,8 +1198,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/46.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 2500.00,
+                    sellingPrice: 2500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1210,8 +1210,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/47.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 2200.00,
+                    sellingPrice: 2500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1222,8 +1222,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/48.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 2200.00,
+                    sellingPrice: 2500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1354,8 +1354,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "images/59.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 700.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1366,8 +1366,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/60.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 700.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1379,7 +1379,7 @@ class FurnitureStore {
                     image: "./images/61.png",
                     description: "",
                     commercialPrice: 500.00,
-                    sellingPrice: 550.00,
+                    sellingPrice: 600.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1390,8 +1390,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/62.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 0.00,
+                    sellingPrice: 0.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1402,8 +1402,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/63.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 450.00,
+                    sellingPrice: 500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1414,8 +1414,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/64.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 600.00,
+                    sellingPrice: 650.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1426,8 +1426,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/65.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 800.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1438,8 +1438,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/66.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 800.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1450,8 +1450,8 @@ class FurnitureStore {
                     category: "sofas",
                     image: "./images/67.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 600.00,
+                    sellingPrice: 650.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1462,8 +1462,8 @@ class FurnitureStore {
                     category: "sofas",
                     image: "./images/68.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 485.00,
+                    sellingPrice: 520.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1474,8 +1474,8 @@ class FurnitureStore {
                     category: "sofas",
                     image: "./images/69.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 400.00,
+                    sellingPrice: 430.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1486,8 +1486,8 @@ class FurnitureStore {
                     category: "sofas",
                     image: "./images/70.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1500.00,
+                    sellingPrice: 1600.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1498,8 +1498,8 @@ class FurnitureStore {
                     category: "sofas",
                     image: "./images/71.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1300.00,
+                    sellingPrice: 1400.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1510,8 +1510,8 @@ class FurnitureStore {
                     category: "sofas",
                     image: "./images/72.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 650.00,
+                    sellingPrice: 700.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1522,8 +1522,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/73.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 800.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1534,8 +1534,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/74.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 700.00,
+                    sellingPrice: 750.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1546,8 +1546,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/75.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 600.00,
+                    sellingPrice: 650.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1558,7 +1558,7 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/76.png",
                     description: "",
-                    commercialPrice: 430.00,
+                    commercialPrice: 400.00,
                     sellingPrice: 450.00,
                     createdAt: new Date().toISOString()
                 },
@@ -1570,8 +1570,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/77.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 650.00,
+                    sellingPrice: 700.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1582,8 +1582,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/78.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 650.00,
+                    sellingPrice: 700.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1594,8 +1594,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/79.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 450.00,
+                    sellingPrice: 500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1606,8 +1606,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/80.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 750.00,
+                    sellingPrice: 800.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1618,8 +1618,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/81.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 650.00,
+                    sellingPrice: 700.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1630,8 +1630,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/82.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 180.00,
+                    sellingPrice: 200.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1642,8 +1642,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 500.00,
+                    sellingPrice: 550.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1654,8 +1654,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/84.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 650.00,
+                    sellingPrice: 700.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1666,8 +1666,8 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/85.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 750.00,
+                    sellingPrice: 800.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1678,44 +1678,44 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/86.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1200.00,
+                    sellingPrice: 1400.00,
                     createdAt: new Date().toISOString()
                 },
                 {
                     id: this.generateId(),
                     name: "",
-                    arabicName: "سرير سندوتش",
+                    arabicName: "سرير سندوتش ابيض",
                     number: "0087",
                     category: "beds",
                     image: "./images/87.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1500.00,
+                    sellingPrice: 1600.00,
                     createdAt: new Date().toISOString()
                 },
                 {
                     id: this.generateId(),
                     name: "",
-                    arabicName: "سرير باكم هزاز",
+                    arabicName: "سرير باكم هزاز ابيض",
                     number: "0088",
                     category: "beds",
                     image: "./images/88.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1350.00,
+                    sellingPrice: 1450.00,
                     createdAt: new Date().toISOString()
                 },
                 {
                     id: this.generateId(),
                     name: "",
-                    arabicName: "سرير كمنجا خفيف هزاز",
+                    arabicName: "سرير كمنجا خفيف هزاز ابيض",
                     number: "0089",
                     category: "beds",
                     image: "./images/89.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 850.00,
+                    sellingPrice: 900.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1726,8 +1726,8 @@ class FurnitureStore {
                     category: "beds",
                     image: "./images/90.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1800.00,
+                    sellingPrice: 2000.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1738,8 +1738,8 @@ class FurnitureStore {
                     category: "beds",
                     image: "./images/91.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 2000.00,
+                    sellingPrice: 2200.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1750,8 +1750,8 @@ class FurnitureStore {
                     category: "desk",
                     image: "./images/92.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1900.00,
+                    sellingPrice: 2100.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1762,8 +1762,8 @@ class FurnitureStore {
                     category: "desk",
                     image: "./images/93.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 900.00,
+                    sellingPrice: 1100.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1774,8 +1774,8 @@ class FurnitureStore {
                     category: "desk",
                     image: "./images/94.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 2300.00,
+                    sellingPrice: 2500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1786,8 +1786,8 @@ class FurnitureStore {
                     category: "desk",
                     image: "./images/95.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1300.00,
+                    sellingPrice: 1500.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1798,8 +1798,8 @@ class FurnitureStore {
                     category: "desk",
                     image: "./images/96.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 2300.00,
+                    sellingPrice: 2700.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1810,8 +1810,8 @@ class FurnitureStore {
                     category: "desk",
                     image: "./images/97.png",
                     description: "",
-                    commercialPrice: 430.00,
-                    sellingPrice: 450.00,
+                    commercialPrice: 1300.00,
+                    sellingPrice: 1700.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2050,8 +2050,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/117.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 800.00,
+                    sellingPrice: 900.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2062,8 +2062,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/118.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 900.00,
+                    sellingPrice: 1000.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2074,8 +2074,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/119.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 450.00,
+                    sellingPrice: 550.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2218,8 +2218,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/131.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 800.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2230,8 +2230,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/132.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 950.00,
+                    sellingPrice: 1000.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2374,8 +2374,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/144.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 1700.00,
+                    sellingPrice: 1800.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2398,8 +2398,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/146.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 1200.00,
+                    sellingPrice: 1300.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2696,7 +2696,7 @@ class FurnitureStore {
                     arabicName: "ترابيزة الرحمة 80 * 120",
                     number: "0171",
                     category: "tables",
-                    image: "./images/171.png",
+                    image: "./images/172.png",
                     description: "",
                     commercialPrice: 1450.00,
                     sellingPrice: 1650.00,
@@ -2806,8 +2806,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/180.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 1100.00,
+                    sellingPrice: 1000.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2866,7 +2866,235 @@ class FurnitureStore {
                     category: "storage",
                     image: "./images/185.png",
                     description: "",
-                    commercialPrice: 550.00,
+                    commercialPrice: 500.00,
+                    sellingPrice: 550.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة شاشة شطرنج كورة",
+                    number: "0186",
+                    category: "tables",
+                    image: "./images/186.png",
+                    description: "",
+                    commercialPrice: 2500.00,
+                    sellingPrice: 3000.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة شاشة 2 درفة ليزر",
+                    number: "0187",
+                    category: "tables",
+                    image: "./images/187.png",
+                    description: "",
+                    commercialPrice: 2500.00,
+                    sellingPrice: 3000.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة 2 درفة بحزام",
+                    number: "0188",
+                    category: "boxs",
+                    image: "./images/188.png",
+                    description: "",
+                    commercialPrice: 2300.00,
+                    sellingPrice: 2500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة عسكري",
+                    number: "0189",
+                    category: "boxs",
+                    image: "./images/189.png",
+                    description: "",
+                    commercialPrice: 2000.00,
+                    sellingPrice: 2100.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة درفة دوران الحسيني",
+                    number: "0190",
+                    category: "boxs",
+                    image: "./images/190.png",
+                    description: "",
+                    commercialPrice: 2500.00,
+                    sellingPrice: 3000.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة عسكري صغير",
+                    number: "0191",
+                    category: "boxs",
+                    image: "./images/191.png",
+                    description: "",
+                    commercialPrice: 1700.00,
+                    sellingPrice: 2000.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة عدلة عمرو عوف",
+                    number: "0192",
+                    category: "boxs",
+                    image: "./images/192.png",
+                    description: "",
+                    commercialPrice: 2300.00,
+                    sellingPrice: 2500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة 3 درفة",
+                    number: "0193",
+                    category: "boxs",
+                    image: "./images/193.png",
+                    description: "",
+                    commercialPrice: 2500.00,
+                    sellingPrice: 2700.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة قشرة هدهد",
+                    number: "0194",
+                    category: "boxs",
+                    image: "./images/194.png",
+                    description: "",
+                    commercialPrice: 1300.00,
+                    sellingPrice: 1500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة قلاب هدهد",
+                    number: "0195",
+                    category: "boxs",
+                    image: "./images/195.png",
+                    description: "",
+                    commercialPrice: 1400.00,
+                    sellingPrice: 1600.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة مفرغة فايبر",
+                    number: "0196",
+                    category: "boxs",
+                    image: "./images/196.png",
+                    description: "",
+                    commercialPrice: 1200.00,
+                    sellingPrice: 1300.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة 2 درفة ودرج بمقبض دهبي",
+                    number: "0197",
+                    category: "boxs",
+                    image: "./images/197.png",
+                    description: "",
+                    commercialPrice: 2300.00,
+                    sellingPrice: 2500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة مجوفة عمرو عوف",
+                    number: "0198",
+                    category: "boxs",
+                    image: "./images/198.png",
+                    description: "",
+                    commercialPrice: 2500.00,
+                    sellingPrice: 2700.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة 2 درفة ودرج تحت",
+                    number: "0199",
+                    category: "boxs",
+                    image: "./images/199.png",
+                    description: "",
+                    commercialPrice: 2300.00,
+                    sellingPrice: 2500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة 3 سرة",
+                    number: "0200",
+                    category: "boxs",
+                    image: "./images/200.png",
+                    description: "",
+                    commercialPrice: 2600.00,
+                    sellingPrice: 2800.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة درفة مفرغة بطبق",
+                    number: "0201",
+                    category: "boxs",
+                    image: "./images/201.png",
+                    description: "",
+                    commercialPrice: 2300.00,
+                    sellingPrice: 2500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة مراية لف عمرو عوف",
+                    number: "0202",
+                    category: "boxs",
+                    image: "./images/202.png",
+                    description: "",
+                    commercialPrice: 2800.00,
+                    sellingPrice: 3000.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة كبيرة",
+                    number: "0203",
+                    category: "boxs",
+                    image: "./images/203.png",
+                    description: "",
+                    commercialPrice: 3200.00,
+                    sellingPrice: 3500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "دفاية",
+                    number: "0204",
+                    category: "boxs",
+                    image: "./images/204.png",
+                    description: "",
+                    commercialPrice: 0.00,
                     sellingPrice: 0.00,
                     createdAt: new Date().toISOString()
                 },
