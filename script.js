@@ -3098,6 +3098,138 @@ class FurnitureStore {
                     sellingPrice: 0.00,
                     createdAt: new Date().toISOString()
                 },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "فضية بسارى",
+                    number: "0205",
+                    category: "fedyat",
+                    image: "./images/205.png",
+                    description: "",
+                    commercialPrice: 3000.00,
+                    sellingPrice: 3100.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "فضية بدون سارى",
+                    number: "0206",
+                    category: "fedyat",
+                    image: "./images/205.png",
+                    description: "",
+                    commercialPrice: 2800.00,
+                    sellingPrice: 2900.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "فضية خفيفة",
+                    number: "0207",
+                    category: "fedyat",
+                    image: "./images/205.png",
+                    description: "",
+                    commercialPrice: 2500.00,
+                    sellingPrice: 2600.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف داير درجة اولى تقيل متنجد",
+                    number: "0208",
+                    category: "chairs",
+                    image: "./images/.png",
+                    description: "",
+                    commercialPrice: 500.00,
+                    sellingPrice: 550.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف داير درجة تانية تقيل متنجد",
+                    number: "0209",
+                    category: "chairs",
+                    image: "./images/.png",
+                    description: "",
+                    commercialPrice: 400.00,
+                    sellingPrice: 450.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف داير بدهر تقيل متنجد",
+                    number: "0210",
+                    category: "chairs",
+                    image: "./images/210.png",
+                    description: "",
+                    commercialPrice: 650.00,
+                    sellingPrice: 700.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف داير برجل استلس تقيل متنجد",
+                    number: "0211",
+                    category: "chairs",
+                    image: "./images/211.png",
+                    description: "",
+                    commercialPrice: 500.00,
+                    sellingPrice: 550.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف داير وسط متنجد",
+                    number: "0212",
+                    category: "chairs",
+                    image: "./images/.png",
+                    description: "",
+                    commercialPrice: 250.00,
+                    sellingPrice: 280.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف داير وسط متنجد فرو",
+                    number: "0213",
+                    category: "chairs",
+                    image: "./images/213.png",
+                    description: "",
+                    commercialPrice: 280.00,
+                    sellingPrice: 300.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف مربع ثابت متنجد",
+                    number: "0214",
+                    category: "chairs",
+                    image: "./images/.png",
+                    description: "",
+                    commercialPrice: 320.00,
+                    sellingPrice: 350.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف مربع بانكت متنجد",
+                    number: "0215",
+                    category: "chairs",
+                    image: "./images/.png",
+                    description: "",
+                    commercialPrice: 400.00,
+                    sellingPrice: 450.00,
+                    createdAt: new Date().toISOString()
+                },
 
 
             ];
