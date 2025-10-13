@@ -1640,7 +1640,7 @@ class FurnitureStore {
                     arabicName: "شماعة علبة خفيفة",
                     number: "0083",
                     category: "storage",
-                    image: "",
+                    image: "./images/85.png",
                     description: "",
                     commercialPrice: 500.00,
                     sellingPrice: 550.00,
@@ -2806,8 +2806,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/180.png",
                     description: "",
-                    commercialPrice: 1100.00,
-                    sellingPrice: 1000.00,
+                    commercialPrice: 1000.00,
+                    sellingPrice: 1100.00,
                     createdAt: new Date().toISOString()
                 },
                 {
