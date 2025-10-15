@@ -3702,7 +3702,7 @@ class FurnitureStore {
                 {
                     id: this.generateId(),
                     name: "",
-                    arabicName: "طقم 3 قطعة أشكال مدهون",
+                    arabicName: "طقم 3 قطعة اشكال مدهون",
                     number: "0255",
                     category: "trabezatmadhona",
                     image: "./images/255.png",
