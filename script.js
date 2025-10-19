@@ -76,7 +76,9 @@ class FurnitureStore {
             categorySelect.addEventListener('change', (e) => {
                 // Reset pagination on category change
                 this.visibleCount = this.itemsPerPage;
-                this.filterByCategory(e.target.value);
+                const category = e.target.value;
+                this.renderSubFilters(category);
+                this.filterByCategory(category);
             });
         }
 
@@ -123,15 +125,15 @@ class FurnitureStore {
             darkModeToggle.addEventListener('click', () => {
                 this.toggleDarkMode();
             });
-            
+
             // Double-click to reset to system theme
             darkModeToggle.addEventListener('dblclick', () => {
                 this.resetToSystemTheme();
                 // Show a brief message
                 this.showMessage(
-                    this.currentLanguage === 'ar' 
-                        ? 'تم إعادة تعيين الوضع إلى إعدادات النظام' 
-                        : 'Theme reset to system preference', 
+                    this.currentLanguage === 'ar'
+                        ? 'تم إعادة تعيين الوضع إلى إعدادات النظام'
+                        : 'Theme reset to system preference',
                     'success'
                 );
             });
@@ -269,7 +271,144 @@ class FurnitureStore {
             ? this.items
             : this.items.filter(item => item.category === category);
 
+        // Apply sub-filter if present
+        const subFiltersContainer = document.getElementById('subFiltersContainer');
+        if (subFiltersContainer && subFiltersContainer.dataset.activeSub) {
+            const subKey = subFiltersContainer.dataset.activeSub;
+            const subValue = subFiltersContainer.dataset.activeValue || 'all';
+            const refined = this.applySubFilter(category, filteredItems, subKey, subValue);
+            this.renderItems(refined);
+            return;
+        }
+
         this.renderItems(filteredItems);
+    }
+
+    // Render accordion-like sub-filters based on category
+    renderSubFilters(category) {
+        const container = document.getElementById('subFiltersContainer');
+        if (!container) return;
+
+        const clearContainer = () => {
+            container.innerHTML = '';
+            container.style.display = 'none';
+            delete container.dataset.activeSub;
+            delete container.dataset.activeValue;
+        };
+
+        if (category === 'chairs') {
+            container.style.display = 'block';
+            container.innerHTML = `
+                <div class="category-select-wrapper">
+                    <select id="chairsTypeSelect" class="category-select">
+                        <option value="all">كل الانواع</option>
+                        <option value="bar">بار</option>
+                        <option value="selm">سلم</option>
+                        <option value="dining">سفرة</option>
+                         <option value="hazaz">هزاز</option>
+                        <option value="bafat">بفات</option>
+                    </select>
+                </div>
+            `;
+            container.dataset.activeSub = 'chairsType';
+            container.dataset.activeValue = 'all';
+            const chairsTypeSelect = document.getElementById('chairsTypeSelect');
+            if (chairsTypeSelect) {
+                chairsTypeSelect.addEventListener('change', (e) => {
+                    container.dataset.activeValue = e.target.value;
+                    this.filterByCategory('chairs');
+                });
+            }
+            return;
+        }
+        
+
+        if (category === 'tables') {
+            container.style.display = 'block';
+            container.innerHTML = `
+                <div class="category-select-wrapper">
+                    <select id="tablesTypeSelect" class="category-select">
+                        <option value="all">كل الأنواع</option>
+                        <option value="matbakh">مطبخ</option>
+                        <option value="coffee">انترية</option>
+                        <option value="dining">سفرة</option>
+                        <option value="taqm">الاطقم</option>
+                        <option value="taqtoqa">طقطوقة</option>
+                        <option value="tv">شاشة</option>
+                    </select>
+                </div>
+            `;
+            container.dataset.activeSub = 'tablesType';
+            container.dataset.activeValue = 'all';
+            const tablesTypeSelect = document.getElementById('tablesTypeSelect');
+            if (tablesTypeSelect) {
+                tablesTypeSelect.addEventListener('change', (e) => {
+                    container.dataset.activeValue = e.target.value;
+                    this.filterByCategory('tables');
+                });
+            }
+            return;
+        }
+        if (category === 'trabezatmadhona') {
+            container.style.display = 'block';
+            container.innerHTML = `
+                <div class="category-select-wrapper">
+                    <select id="trabezatmadhonaTypeSelect" class="category-select">
+                        <option value="all">كل الانواع</option>
+                        <option value="anterniya">انترية</option>
+                        <option value="taqm">الاطقم</option>
+                        <option value="taqtoqa">طقطوقة</option>
+                        <option value="tv">شاشة</option>
+                    </select>
+                </div>
+            `;
+            container.dataset.activeSub = 'trabezatmadhonaType';
+            container.dataset.activeValue = 'all';
+            const trabezatmadhonaTypeSelect = document.getElementById('trabezatmadhonaTypeSelect');
+            if (trabezatmadhonaTypeSelect) {
+                trabezatmadhonaTypeSelect.addEventListener('change', (e) => {
+                    container.dataset.activeValue = e.target.value;
+                    this.filterByCategory('trabezatmadhona');
+                });
+            }
+            return;
+        }
+
+        // No sub-filters for other categories for now
+        clearContainer();
+    }
+
+    // Apply sub-filter rules
+    applySubFilter(category, items, subKey, value) {
+        if (!value || value === 'all') return items;
+        const nameIncludes = (item, token) =>
+            (item.arabicName || item.name || '').toLowerCase().includes(token.toLowerCase());
+
+        if (category === 'chairs' && subKey === 'chairsType') {
+            if (value === 'bar') return items.filter(i => nameIncludes(i, 'بار'));
+            if (value === 'selm') return items.filter(i => nameIncludes(i, 'سلم'));
+            if (value === 'dining') return items.filter(i => nameIncludes(i, 'سفرة'));
+            if (value === 'bafat') return items.filter(i => nameIncludes(i, 'بف'));
+            if (value === 'hazaz') return items.filter(i => nameIncludes(i, 'هزاز'));
+        }
+        
+        if (category === 'tables' && subKey === 'tablesType') {
+            if (value === 'tv') return items.filter(i => nameIncludes(i, 'شاشة'));
+            if (value === 'matbakh') return items.filter(i => nameIncludes(i, 'مطبخ'));
+            if (value === 'coffee') return items.filter(i => nameIncludes(i, 'انترية'));
+            if (value === 'taqm') return items.filter(i => nameIncludes(i, 'طقم'));
+            if (value === 'taqtoqa') return items.filter(i => nameIncludes(i, 'طقطوقة'));
+            if (value === 'dining') return items.filter(i => nameIncludes(i, 'سفرة'));
+        }
+
+        if (category === 'trabezatmadhona' && subKey === 'trabezatmadhonaType') {
+            if (value === 'anterniya') return items.filter(i => nameIncludes(i, 'انترية'));
+            if (value === 'taqm') return items.filter(i => nameIncludes(i, 'طقم'));
+            if (value === 'taqtoqa') return items.filter(i => nameIncludes(i, 'طقطوقة'));
+            if (value === 'tv') return items.filter(i => nameIncludes(i, 'شاشة'));
+        }
+
+        return items;
     }
 
     renderItems(items = this.items) {
@@ -599,7 +738,8 @@ class FurnitureStore {
             'fedyat': { en: 'fedyat', ar: 'فضية' },
             'trabezatmadhona': { en: 'trabezatmadhona', ar: 'ترابيزات مدهونة' },
             'gazamatmadhona': { en: 'gazamatmadhona', ar: 'جزامات مدهونة' },
-            'berwaz': { en: 'berwaz', ar: 'براويز' }
+            'berwaz': { en: 'berwaz', ar: 'براويز' },
+            'istales': { en: 'istales', ar: 'استلس' },
 
         };
         return categories[category] ? categories[category][this.currentLanguage] : category;
@@ -2058,7 +2198,7 @@ class FurnitureStore {
                 {
                     id: this.generateId(),
                     name: "",
-                    arabicName: "ترابيزة انترية حزام سداسى", 
+                    arabicName: "ترابيزة انترية حزام سداسى",
                     number: "0118",
                     category: "tables",
                     image: "./images/118.png",
@@ -3821,7 +3961,7 @@ class FurnitureStore {
             document.documentElement.setAttribute('data-theme', 'light');
         }
         this.updateDarkModeIcon();
-        
+
         // Listen for system theme changes
         this.setupSystemThemeListener();
     }
@@ -3831,7 +3971,7 @@ class FurnitureStore {
         const savedTheme = localStorage.getItem('darkMode');
         if (savedTheme === null) {
             const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-            
+
             const handleSystemThemeChange = (e) => {
                 // Only update if user hasn't manually set a preference
                 if (localStorage.getItem('darkMode') === null) {
@@ -3858,13 +3998,13 @@ class FurnitureStore {
     toggleDarkMode() {
         this.isDarkMode = !this.isDarkMode;
         localStorage.setItem('darkMode', this.isDarkMode);
-        
+
         if (this.isDarkMode) {
             document.documentElement.setAttribute('data-theme', 'dark');
         } else {
             document.documentElement.setAttribute('data-theme', 'light');
         }
-        
+
         this.updateDarkModeIcon();
     }
 
@@ -3872,13 +4012,13 @@ class FurnitureStore {
         // Clear manual preference and use system theme
         localStorage.removeItem('darkMode');
         this.isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
+
         if (this.isDarkMode) {
             document.documentElement.setAttribute('data-theme', 'dark');
         } else {
             document.documentElement.setAttribute('data-theme', 'light');
         }
-        
+
         this.updateDarkModeIcon();
         this.setupSystemThemeListener();
     }
@@ -3890,27 +4030,27 @@ class FurnitureStore {
             if (icon) {
                 const savedTheme = localStorage.getItem('darkMode');
                 const isSystemTheme = savedTheme === null;
-                
+
                 if (this.isDarkMode) {
                     icon.className = 'fas fa-sun';
                     if (isSystemTheme) {
-                        darkModeToggle.title = this.currentLanguage === 'ar' 
-                            ? 'الوضع المظلم (إعدادات النظام) - انقر نقرتين لإعادة التعيين' 
+                        darkModeToggle.title = this.currentLanguage === 'ar'
+                            ? 'الوضع المظلم (إعدادات النظام) - انقر نقرتين لإعادة التعيين'
                             : 'Dark Mode (System) - Double-click to reset';
                     } else {
-                        darkModeToggle.title = this.currentLanguage === 'ar' 
-                            ? 'تبديل الوضع المضيء - انقر نقرتين لإعادة تعيين النظام' 
+                        darkModeToggle.title = this.currentLanguage === 'ar'
+                            ? 'تبديل الوضع المضيء - انقر نقرتين لإعادة تعيين النظام'
                             : 'Switch to Light Mode - Double-click to reset to system';
                     }
                 } else {
                     icon.className = 'fas fa-moon';
                     if (isSystemTheme) {
-                        darkModeToggle.title = this.currentLanguage === 'ar' 
-                            ? 'الوضع المضيء (إعدادات النظام) - انقر نقرتين لإعادة التعيين' 
+                        darkModeToggle.title = this.currentLanguage === 'ar'
+                            ? 'الوضع المضيء (إعدادات النظام) - انقر نقرتين لإعادة التعيين'
                             : 'Light Mode (System) - Double-click to reset';
                     } else {
-                        darkModeToggle.title = this.currentLanguage === 'ar' 
-                            ? 'تبديل الوضع المظلم - انقر نقرتين لإعادة تعيين النظام' 
+                        darkModeToggle.title = this.currentLanguage === 'ar'
+                            ? 'تبديل الوضع المظلم - انقر نقرتين لإعادة تعيين النظام'
                             : 'Switch to Dark Mode - Double-click to reset to system';
                     }
                 }
