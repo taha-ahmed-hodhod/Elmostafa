@@ -477,12 +477,11 @@ main {
 }
 
 .category-select {
-
     width: 100%;
     appearance: list-item;
     -webkit-appearance: list-item;
     -moz-appearance: listitem;
-    padding: 14px 48px 14px 16px;
+    padding: 14px 48px 14px 5px;
     border: 2px solid var(--border-color);
     border-radius: 5px;
     background: var(--bg-secondary);
@@ -500,22 +499,9 @@ main {
     box-shadow: 0 0 0 4px var(--shadow-light);
 }
 
-.select-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right:  1px;
-    pointer-events: none;
-    color: var(--accent-primary);
-}
 
 body[dir="rtl"] .category-select {
     padding: 14px 16px 14px 48px;
-}
-
-body[dir="rtl"] .select-icon {
-    left: 16px;
-    right: auto;
 }
 
 /* Items Grid */
