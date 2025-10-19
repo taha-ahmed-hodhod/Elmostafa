@@ -477,10 +477,11 @@ main {
 }
 
 .category-select {
+
     width: 100%;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    appearance: list-item;
+    -webkit-appearance: list-item;
+    -moz-appearance: listitem;
     padding: 14px 48px 14px 16px;
     border: 2px solid var(--border-color);
     border-radius: 5px;
@@ -503,7 +504,7 @@ main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 16px;
+    right:  1px;
     pointer-events: none;
     color: var(--accent-primary);
 }
