@@ -15,7 +15,7 @@
     --accent-primary: #667eea;
     --accent-secondary: #764ba2;
     --accent-gradient: linear-gradient(135deg, #667eea, #764ba2);
-    --navbar-gradient: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    --navbar-gradient: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, #7487f5 100%);
     --success-color: #28a745;
     --danger-color: #dc3545;
     --warning-color: #ffc107;
@@ -23,6 +23,7 @@
     --scroll-top-bg:linear-gradient(2deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     --scroll-top-bg-dark: linear-gradient(135deg, #667eea, #764ba2);
     --scroll-top-color: #fff;
+    --footer-color-sun:  #7487f5;
 }
 /* Dark Theme Colors */
 [data-theme="dark"] {
@@ -158,7 +159,7 @@
 
 /* Footer */
 .site-footer {
-    background: var(--accent-primary);
+    background: var(--footer-color-sun);
     color: #fff;
     margin-top: 40px;
     border-top: 1px solid var(--border-color);
@@ -270,7 +271,6 @@ body {
 body[dir="rtl"] {
     font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 /* Language toggle button */
 .language-toggle {
     background: rgba(255,255,255,0.1);
@@ -1177,4 +1177,3 @@ body[dir="rtl"] .form-actions {
     color: #721c24;
     border: 1px solid #f5c6cb;
 }
-
