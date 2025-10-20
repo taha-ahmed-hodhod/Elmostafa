@@ -349,6 +349,29 @@ class FurnitureStore {
             }
             return;
         }
+        if (category === 'storage') {
+            container.style.display = 'block';
+            container.innerHTML = `
+                <div class="category-select-wrapper">
+                    <select id="storageTypeSelect" class="category-select">
+                        <option value="all">كل الأنواع</option>
+                        <option value="mraya">مراية</option>
+                        <option value="abyad">أبيض</option>
+                        <option value="madhon">مدهون</option>
+                    </select>
+                </div>
+            `;
+            container.dataset.activeSub = 'storageType';
+            container.dataset.activeValue = 'all';
+            const tablesTypeSelect = document.getElementById('storageTypeSelect');
+            if (tablesTypeSelect) {
+                tablesTypeSelect.addEventListener('change', (e) => {
+                    container.dataset.activeValue = e.target.value;
+                    this.filterByCategory('storage');
+                });
+            }
+            return;
+        }
         if (category === 'trabezatmadhona') {
             container.style.display = 'block';
             container.innerHTML = `
@@ -401,6 +424,11 @@ class FurnitureStore {
             if (value === 'dining') return items.filter(i => nameIncludes(i, 'سفرة'));
         }
 
+        if (category === 'storage' && subKey === 'storageType'){
+            if (value === 'abyad') return items.filter(i => nameIncludes(i, 'عجينة') || nameIncludes(i, 'زان') || nameIncludes(i, 'سويد') || nameIncludes(i, 'مشيشة') || nameIncludes(i, 'علبة') || nameIncludes(i, 'فواطة'));
+            if (value === 'madhon') return items.filter(i => nameIncludes(i, 'مدهون'));
+            if (value === 'mraya') return items.filter(i => nameIncludes(i, 'مراية'));
+        }
         if (category === 'trabezatmadhona' && subKey === 'trabezatmadhonaType') {
             if (value === 'anterniya') return items.filter(i => nameIncludes(i, 'انترية'));
             if (value === 'taqm') return items.filter(i => nameIncludes(i, 'طقم'));
