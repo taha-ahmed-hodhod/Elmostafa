@@ -20,10 +20,10 @@
     --danger-color: #dc3545;
     --warning-color: #ffc107;
     --info-color: #17a2b8;
-    --scroll-top-bg:linear-gradient(2deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    --scroll-top-bg:linear-gradient(2deg,rgba(238, 174, 202, 1) 0%, #7487f5 100%);
     --scroll-top-bg-dark: linear-gradient(135deg, #667eea, #764ba2);
     --scroll-top-color: #fff;
-    --footer-color-sun:  #7487f5;
+    --footer-color-sun:  #5772ed;
 }
 /* Dark Theme Colors */
 [data-theme="dark"] {
@@ -241,7 +241,7 @@
     border-top: 1px solid rgba(148, 163, 184, 0.2);
     padding: 12px 16px;
     text-align: center;
-    color: #94a3b8;
+    color: #d4e0f0;
     font-size: 0.9rem;
 }
 
@@ -1096,9 +1096,82 @@ body[dir="rtl"] .form-actions {
     }
 
     .items-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(109px, 1fr));
         gap: 1rem;
     }
+    .img-hight {
+    padding: 20px;
+    height: 172px;
+    overflow: hidden;
+    position: relative;
+    }
+    .item-name {
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+.item-number {
+    color: var(--accent-primary);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+}
+.item-category {
+    display: inline-block;
+    background: var(--bg-tertiary);
+    color: var(--accent-primary);
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.price-label {
+    color: var(--text-secondary);
+font-size: 0.56rem;
+}
+.item-card .commercial-price {
+    filter: blur(6px);
+    user-select: none;
+    font-size: .6rem;
+}
+.selling-price {
+    color: var(--success-color);
+    font-size: .6rem;
+}
+.item-content {
+    padding: 0;
+}
+.item-card{
+        padding: 10px 10px 15px;
+}
+.item-prices {
+    margin-top: 1rem;
+    padding: .5rem;
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-primary);
+}
+.empty-state {
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-secondary);
+}
+.price-row {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+.section {
+    display: none;
+    padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
     .dashboard-header {
         flex-direction: column;
@@ -1134,6 +1207,7 @@ body[dir="rtl"] .form-actions {
         height: 140px;
         padding: 0;
     }
+
 }
 
 /* Loading Animation */
