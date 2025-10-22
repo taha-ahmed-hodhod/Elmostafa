@@ -521,6 +521,7 @@ body[dir="rtl"] .category-select {
     cursor: pointer;
     padding: 10px;
     border: 1px solid var(--border-color);
+    position: relative;
 }
 
 .item-card:hover {
@@ -606,9 +607,15 @@ body[dir="rtl"] .category-select {
 }
 
 .item-description {
-    margin-top: 1rem;
     color: var(--text-secondary);
-    line-height: 1.5;
+    position: absolute;
+    line-height: 1.6;
+    top: 16px;
+    right: 26px;
+    font-size: 1rem;
+    background-color: #ab1a1a;
+    padding: 2px 7px;
+    border-radius: 50px;
 }
 
 .item-prices {
@@ -1095,13 +1102,13 @@ body[dir="rtl"] .form-actions {
     }
 
     .items-grid {
-        grid-template-columns: repeat(auto-fill, minmax(109px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
         gap: 1rem;
         margin-bottom: 20px;
     }
     .img-hight {
     padding: 20px;
-    height: 172px;
+    height: 150px;
     overflow: hidden;
     position: relative;
     }
@@ -1115,7 +1122,7 @@ body[dir="rtl"] .form-actions {
     color: var(--accent-primary);
     font-weight: 500;
     margin-bottom: 0.5rem;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 .item-category {
     display: inline-block;
@@ -1185,6 +1192,7 @@ font-size: 0.56rem;
 }
 #searchInput{
     font-size: .9rem;
+    padding: 15px 15px 15px 43px;
 }
 .search-box i{
     font-size: 1rem;
@@ -1230,6 +1238,16 @@ font-size: 0.56rem;
 }
 .site-footer .footer-bottom{
     font-size: .8rem;
+}
+.item-description {
+    color: var(--text-secondary);
+    position: absolute;
+    top:10px;
+    right: 10px;
+    font-size: .6rem;
+    background-color: #ab1a1a;
+    padding: 2px 5px;
+    border-radius: 50px;
 }
 
     .nav-brand h1 img {
