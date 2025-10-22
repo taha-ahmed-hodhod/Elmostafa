@@ -4159,7 +4159,7 @@ class FurnitureStore {
                     number: "0276",
                     category: "trabezatmadhona",
                     image: "./images/276.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: .00,
                     sellingPrice: .00,
                     createdAt: new Date().toISOString()
@@ -4171,7 +4171,7 @@ class FurnitureStore {
                     number: "0277",
                     category: "trabezatmadhona",
                     image: "./images/277.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: .00,
                     sellingPrice: .00,
                     createdAt: new Date().toISOString()
@@ -4183,7 +4183,7 @@ class FurnitureStore {
                     number: "0278",
                     category: "trabezatmadhona",
                     image: "./images/278.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: .00,
                     sellingPrice: .00,
                     createdAt: new Date().toISOString()
