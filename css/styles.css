@@ -270,31 +270,6 @@ body {
 body[dir="rtl"] {
     font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* Language toggle button */
-.language-toggle {
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.language-toggle:hover {
-    background: rgba(255,255,255,0.2);
-    transform: translateY(-2px);
-}
-
-.language-toggle i {
-    font-size: 1.1rem;
-}
-
 /* Dark Mode Toggle Button */
 .dark-mode-toggle {
     background: rgba(255,255,255,0.1);
@@ -607,7 +582,7 @@ body[dir="rtl"] .category-select {
 }
 
 .item-description {
-    color: var(--text-secondary);
+    color: #fff;
     position: absolute;
     line-height: 1.6;
     top: 16px;
@@ -1240,12 +1215,12 @@ font-size: 0.56rem;
     font-size: .8rem;
 }
 .item-description {
-    color: var(--text-secondary);
+    color: #fff;
     position: absolute;
     top:10px;
     right: 10px;
     font-size: .6rem;
-    background-color: #ab1a1a;
+    background-color: #f31f50;
     padding: 2px 5px;
     border-radius: 50px;
 }
