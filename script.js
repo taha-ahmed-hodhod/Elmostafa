@@ -321,7 +321,7 @@ class FurnitureStore {
             }
             return;
         }
-        
+
 
         if (category === 'tables') {
             container.style.display = 'block';
@@ -396,6 +396,31 @@ class FurnitureStore {
             }
             return;
         }
+        if (category === 'istales') {
+            container.style.display = 'block';
+            container.innerHTML = `
+                <div class="category-select-wrapper">
+                    <select id="istalesTypeSelect" class="category-select">
+                        <option value="all">كل الانواع</option>
+                        <option value="taqm">الاطقم</option>
+                        <option value="kebera">كبيرة</option>
+                        <option value="wasat">وسط</option>
+                        <option value="soqera">صغيرة</option>
+                        <option value="taqtoqa">طقطوقة</option>
+                    </select>
+                </div>
+            `;
+            container.dataset.activeSub = 'istalesType';
+            container.dataset.activeValue = 'all';
+            const istalesTypeSelect = document.getElementById('istalesTypeSelect');
+            if (istalesTypeSelect) {
+                istalesTypeSelect.addEventListener('change', (e) => {
+                    container.dataset.activeValue = e.target.value;
+                    this.filterByCategory('istales');
+                });
+            }
+            return;
+        }
 
         // No sub-filters for other categories for now
         clearContainer();
@@ -414,7 +439,7 @@ class FurnitureStore {
             if (value === 'bafat') return items.filter(i => nameIncludes(i, 'بف'));
             if (value === 'hazaz') return items.filter(i => nameIncludes(i, 'هزاز'));
         }
-        
+
         if (category === 'tables' && subKey === 'tablesType') {
             if (value === 'tv') return items.filter(i => nameIncludes(i, 'شاشة'));
             if (value === 'matbakh') return items.filter(i => nameIncludes(i, 'مطبخ'));
@@ -424,7 +449,7 @@ class FurnitureStore {
             if (value === 'dining') return items.filter(i => nameIncludes(i, 'سفرة'));
         }
 
-        if (category === 'storage' && subKey === 'storageType'){
+        if (category === 'storage' && subKey === 'storageType') {
             if (value === 'abyad') return items.filter(i => nameIncludes(i, 'عجينة') || nameIncludes(i, 'زان') || nameIncludes(i, 'سويد') || nameIncludes(i, 'مشيشة') || nameIncludes(i, 'علبة') || nameIncludes(i, 'فواطة'));
             if (value === 'madhon') return items.filter(i => nameIncludes(i, 'مدهون'));
             if (value === 'mraya') return items.filter(i => nameIncludes(i, 'مراية'));
@@ -434,6 +459,13 @@ class FurnitureStore {
             if (value === 'taqm') return items.filter(i => nameIncludes(i, 'طقم'));
             if (value === 'taqtoqa') return items.filter(i => nameIncludes(i, 'طقطوقة'));
             if (value === 'tv') return items.filter(i => nameIncludes(i, 'شاشة'));
+        }
+        if (category === 'istales' && subKey === 'istalesType') {
+            if (value === 'taqm') return items.filter(i => nameIncludes(i, 'طقم'));
+            if (value === 'kebera') return items.filter(i => nameIncludes(i, 'كبيرة'));
+            if (value === 'wasat') return items.filter(i => nameIncludes(i, 'وسط'));
+            if (value === 'soqera') return items.filter(i => nameIncludes(i, 'صغيرة'));
+            if (value === 'taqtoqa') return items.filter(i => nameIncludes(i, 'طقطوقة'));
         }
 
         return items;
@@ -1560,8 +1592,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/62.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 1350.00,
+                    sellingPrice: 1450.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -4032,8 +4064,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/268.png",
                     description: "",
-                    commercialPrice: .00,
-                    sellingPrice: .00,
+                    commercialPrice: 1700.00,
+                    sellingPrice: 1800.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -4082,6 +4114,78 @@ class FurnitureStore {
                     description: "",
                     commercialPrice: 600.00,
                     sellingPrice: 650.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم 2 قطعة دايرة بصل",
+                    number: "0273",
+                    category: "tables",
+                    image: "./images/273.png",
+                    description: "",
+                    commercialPrice: 1600.00,
+                    sellingPrice: 1750.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم 2 قطعة دايرة مقوس بصل",
+                    number: "0274",
+                    category: "tables",
+                    image: "./images/274.png",
+                    description: "",
+                    commercialPrice: 1600.00,
+                    sellingPrice: 1750.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم 2 قطعة مربع بصل",
+                    number: "0275",
+                    category: "tables",
+                    image: "./images/275.png",
+                    description: "",
+                    commercialPrice: 1600.00,
+                    sellingPrice: 1750.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم 2 قطعة دايرة بصل مدهون",
+                    number: "0276",
+                    category: "trabezatmadhona",
+                    image: "./images/276.png",
+                    description: "",
+                    commercialPrice: .00,
+                    sellingPrice: .00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم 2 قطعة دايرة مقوس بصل مدهون",
+                    number: "0277",
+                    category: "trabezatmadhona",
+                    image: "./images/277.png",
+                    description: "",
+                    commercialPrice: .00,
+                    sellingPrice: .00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم 2 قطعة مربع بصل مدهون",
+                    number: "0278",
+                    category: "trabezatmadhona",
+                    image: "./images/278.png",
+                    description: "",
+                    commercialPrice: .00,
+                    sellingPrice: .00,
                     createdAt: new Date().toISOString()
                 },
 
