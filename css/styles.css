@@ -1147,7 +1147,7 @@ font-size: 0.56rem;
     padding: 0;
 }
 .item-card{
-        padding: 10px 10px 15px;
+    padding: 7px 7px 10px;
 }
 .item-prices {
     margin-top: 1rem;
@@ -1329,3 +1329,4 @@ font-size: 0.56rem;
     color: #721c24;
     border: 1px solid #f5c6cb;
 }
+
