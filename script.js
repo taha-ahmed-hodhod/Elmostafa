@@ -767,6 +767,7 @@ class FurnitureStore {
             'trabezatmadhona': { en: 'trabezatmadhona', ar: 'ترابيزات مدهونة' },
             'gazamatmadhona': { en: 'gazamatmadhona', ar: 'جزامات مدهونة' },
             'berwaz': { en: 'berwaz', ar: 'براويز' },
+            'hamelMoshaf': { en: 'hamelMoshaf', ar: 'حامل مصحف' },
             'istales': { en: 'istales', ar: 'استلس' },
 
         };
@@ -946,7 +947,7 @@ class FurnitureStore {
                     number: "0011",
                     category: "chairs",
                     image: "./images/11.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 0.00,
                     sellingPrice: 0.00,
                     createdAt: new Date().toISOString()
@@ -1222,7 +1223,7 @@ class FurnitureStore {
                     number: "0034",
                     category: "tables",
                     image: "./images/29.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 1200.00,
                     sellingPrice: 1250.00,
                     createdAt: new Date().toISOString()
@@ -1234,7 +1235,7 @@ class FurnitureStore {
                     number: "0035",
                     category: "tables",
                     image: "./images/32.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 1100.00,
                     sellingPrice: 1150.00,
                     createdAt: new Date().toISOString()
@@ -1354,7 +1355,7 @@ class FurnitureStore {
                     number: "0045",
                     category: "tables",
                     image: "./images/45.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 2500.00,
                     sellingPrice: 2500.00,
                     createdAt: new Date().toISOString()
@@ -1474,7 +1475,7 @@ class FurnitureStore {
                     number: "0055",
                     category: "tables",
                     image: "./images/55.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 550.00,
                     sellingPrice: 650.00,
                     createdAt: new Date().toISOString()
@@ -1486,7 +1487,7 @@ class FurnitureStore {
                     number: "0056",
                     category: "tables",
                     image: "./images/56.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 550.00,
                     sellingPrice: 650.00,
                     createdAt: new Date().toISOString()
@@ -2278,7 +2279,7 @@ class FurnitureStore {
                     number: "0122",
                     category: "tables",
                     image: "./images/122.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 750.00,
                     sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
@@ -2842,7 +2843,7 @@ class FurnitureStore {
                     number: "0169",
                     category: "tables",
                     image: "",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 0.00,
                     sellingPrice: 0.00,
                     createdAt: new Date().toISOString()
@@ -3466,7 +3467,7 @@ class FurnitureStore {
                     number: "0221",
                     category: "gazamatmadhona",
                     image: "./images/221.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 3500.00,
                     sellingPrice: 3800.00,
                     createdAt: new Date().toISOString()
@@ -3961,6 +3962,126 @@ class FurnitureStore {
                     description: "",
                     commercialPrice: 700.00,
                     sellingPrice: 750.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "بف دايرة بانكت",
+                    number: "0263",
+                    category: "chairs",
+                    image: "./images/263.png",
+                    description: "",
+                    commercialPrice: 450.00,
+                    sellingPrice: 475.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية فورميكا صغيرة ",
+                    number: "0264",
+                    category: "trabezatmadhona",
+                    image: "./images/264.png",
+                    description: "",
+                    commercialPrice: 1250.00,
+                    sellingPrice: 1300.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "شماعة كمنجا زان",
+                    number: "0265",
+                    category: "storage",
+                    image: "./images/265.png",
+                    description: "",
+                    commercialPrice: 1300.00,
+                    sellingPrice: 1350.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "شماعة شجرة عيد الميلاد زان",
+                    number: "0266",
+                    category: "storage",
+                    image: "./images/266.png",
+                    description: "",
+                    commercialPrice: 750.00,
+                    sellingPrice: 800.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "شماعة صبارة زان",
+                    number: "0267",
+                    category: "storage",
+                    image: "./images/267.png",
+                    description: "",
+                    commercialPrice: 650.00,
+                    sellingPrice: 700.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية مستطيل خوص",
+                    number: "0268",
+                    category: "tables",
+                    image: "./images/268.png",
+                    description: "",
+                    commercialPrice: .00,
+                    sellingPrice: .00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "مكتب كونتر بوحدة ادراج مدهون",
+                    number: "0269",
+                    category: "desk",
+                    image: "./images/269.png",
+                    description: "",
+                    commercialPrice: .00,
+                    sellingPrice: .00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "حامل مصحف فتح وقفل زان",
+                    number: "0270",
+                    category: "hamelMoshaf",
+                    image: "./images/270.png",
+                    description: "",
+                    commercialPrice: 170.00,
+                    sellingPrice: 180.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "حامل مصحف فتح وقفل ليزر",
+                    number: "0271",
+                    category: "hamelMoshaf",
+                    image: "./images/271.png",
+                    description: "",
+                    commercialPrice: 135.00,
+                    sellingPrice: 145.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "حامل مصحف كبير",
+                    number: "0272",
+                    category: "hamelMoshaf",
+                    image: "./images/272.png",
+                    description: "",
+                    commercialPrice: 600.00,
+                    sellingPrice: 650.00,
                     createdAt: new Date().toISOString()
                 },
 
