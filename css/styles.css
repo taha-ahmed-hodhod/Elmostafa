@@ -561,7 +561,17 @@ body[dir="rtl"] .category-select {
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: var(--text-primary);
-}
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    .item-name:hover{
+    overflow: visible;
+    white-space: normal;
+    -webkit-box-orient:horizontal;
+    }
 
 .item-number {
     color: var(--accent-primary);
@@ -1092,7 +1102,17 @@ body[dir="rtl"] .form-actions {
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: var(--text-primary);
-}
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    .item-name:hover{
+    overflow: visible;
+    white-space: normal;
+    -webkit-box-orient:horizontal;
+    }
 .item-number {
     color: var(--accent-primary);
     font-weight: 500;
