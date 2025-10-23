@@ -537,7 +537,7 @@ class FurnitureStore {
                 </div>
                 <div class="item-content">
                     <h3 class="item-name">${this.currentLanguage === 'ar' && item.arabicName ? item.arabicName : item.name}</h3>
-                    <p class="item-number">${this.currentLanguage === 'ar' ? 'الرقم الخاص:' : 'Special Number:'} ${item.number}</p>
+                    <p class="item-number">${this.currentLanguage === 'ar' ? ' رقم المنتج:' : 'Special Number:'} ${item.number}</p>
                     <span class="item-category">${this.getCategoryName(item.category)}</span>
                     ${item.description ? `<p class="item-description">${item.description}</p>` : ''}
                     <div class="item-prices">
@@ -592,7 +592,7 @@ class FurnitureStore {
                 <div class="dashboard-item-info">
                     <h4 class="dashboard-item-name">${this.currentLanguage === 'ar' && item.arabicName ? item.arabicName : item.name}</h4>
                     <div class="dashboard-item-details">
-                        <p><strong>${this.currentLanguage === 'ar' ? 'الرقم الخاص:' : 'Special Number:'}</strong> ${item.number}</p>
+                        <p><strong>${this.currentLanguage === 'ar' ? ' رقم المنتج:' : 'Special Number:'}</strong> ${item.number}</p>
                         <p><strong>${this.currentLanguage === 'ar' ? 'الفئة:' : 'Category:'}</strong> ${this.getCategoryName(item.category)}</p>
                         <p><strong>${this.currentLanguage === 'ar' ? 'السعر التجاري:' : 'Commercial Price:'}</strong> ${(item.commercialPrice || 0).toFixed(2)} EGP</p>
                         <p><strong>${this.currentLanguage === 'ar' ? 'سعر البيع:' : 'Selling Price:'}</strong> ${(item.sellingPrice || 0).toFixed(2)} EGP</p>
@@ -3348,7 +3348,7 @@ class FurnitureStore {
                     arabicName: "فضية بدون سارى",
                     number: "0206",
                     category: "fedyat",
-                    image: "./images/205.png",
+                    image: "./images/206.png",
                     description: "",
                     commercialPrice: 2800.00,
                     sellingPrice: 2900.00,
@@ -3360,7 +3360,7 @@ class FurnitureStore {
                     arabicName: "فضية خفيفة",
                     number: "0207",
                     category: "fedyat",
-                    image: "./images/205.png",
+                    image: "./images/206.png",
                     description: "",
                     commercialPrice: 2500.00,
                     sellingPrice: 2600.00,
