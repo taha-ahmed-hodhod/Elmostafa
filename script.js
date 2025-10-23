@@ -404,7 +404,7 @@ class FurnitureStore {
                         <option value="all">كل الانواع</option>
                         <option value="taqm">الاطقم</option>
                         <option value="kebera">كبيرة</option>
-                        <option value="wasat">وسط</option>
+                        <option value="morab3">مربعة / بيضاوى</option>
                         <option value="soqera">صغيرة</option>
                         <option value="taqtoqa">طقطوقة</option>
                     </select>
@@ -463,7 +463,7 @@ class FurnitureStore {
         if (category === 'istales' && subKey === 'istalesType') {
             if (value === 'taqm') return items.filter(i => nameIncludes(i, 'طقم'));
             if (value === 'kebera') return items.filter(i => nameIncludes(i, 'كبيرة'));
-            if (value === 'wasat') return items.filter(i => nameIncludes(i, 'وسط'));
+            if (value === 'morab3') return items.filter(i => nameIncludes(i, 'مربعة'));
             if (value === 'soqera') return items.filter(i => nameIncludes(i, 'صغيرة'));
             if (value === 'taqtoqa') return items.filter(i => nameIncludes(i, 'طقطوقة'));
         }
@@ -800,7 +800,7 @@ class FurnitureStore {
             'gazamatmadhona': { en: 'gazamatmadhona', ar: 'جزامات مدهونة' },
             'berwaz': { en: 'berwaz', ar: 'براويز' },
             'hamelMoshaf': { en: 'hamelMoshaf', ar: 'حامل مصحف' },
-            'istales': { en: 'istales', ar: 'استلس' },
+            'istales': { en: 'istales', ar: 'استلس تيل'},
 
         };
         return categories[category] ? categories[category][this.currentLanguage] : category;
@@ -4159,7 +4159,7 @@ class FurnitureStore {
                     number: "0276",
                     category: "trabezatmadhona",
                     image: "./images/276.png",
-                    description: "خلصان",
+                    description: "",
                     commercialPrice: .00,
                     sellingPrice: .00,
                     createdAt: new Date().toISOString()
@@ -4171,7 +4171,7 @@ class FurnitureStore {
                     number: "0277",
                     category: "trabezatmadhona",
                     image: "./images/277.png",
-                    description: "خلصان",
+                    description: "",
                     commercialPrice: .00,
                     sellingPrice: .00,
                     createdAt: new Date().toISOString()
@@ -4183,9 +4183,129 @@ class FurnitureStore {
                     number: "0278",
                     category: "trabezatmadhona",
                     image: "./images/278.png",
-                    description: "خلصان",
+                    description: "",
                     commercialPrice: .00,
                     sellingPrice: .00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة كونتر الحسيني مدهون",
+                    number: "0279",
+                    category: "gazamatmadhona",
+                    image: "./images/279.png",
+                    description: "",
+                    commercialPrice: 2500.00,
+                    sellingPrice: 2700.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "جزامة كونتر الحسيني بوحدة ادراج مدهون",
+                    number: "0280",
+                    category: "gazamatmadhona",
+                    image: "./images/280.png",
+                    description: "",
+                    commercialPrice: 3500.00,
+                    sellingPrice: 3800.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم استلس كانسور",
+                    number: "0281",
+                    category: "istales",
+                    image: "./images/281.png",
+                    description: "خلصان",
+                    commercialPrice: 0.00,
+                    sellingPrice: 8500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم استلس",
+                    number: "0282",
+                    category: "istales",
+                    image: "./images/282.png",
+                    description: "",
+                    commercialPrice: 2500.00,
+                    sellingPrice: 2800.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة استلس دايرة كبيرة",
+                    number: "0283",
+                    category: "istales",
+                    image: "./images/283.png",
+                    description: "",
+                    commercialPrice: 2000.00,
+                    sellingPrice: 2200.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة استلس كريستالا  كبيرة",
+                    number: "0284",
+                    category: "istales",
+                    image: "./images/284.png",
+                    description: "",
+                    commercialPrice: 2200.00,
+                    sellingPrice: 2500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة استلس اورجانز  كبيرة",
+                    number: "0285",
+                    category: "istales",
+                    image: "./images/285.png",
+                    description: "",
+                    commercialPrice: 2700.00,
+                    sellingPrice: 3000.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة استلس مربعة / بيضاوى",
+                    number: "0286",
+                    category: "istales",
+                    image: "./images/286.png",
+                    description: "",
+                    commercialPrice: 2000.00,
+                    sellingPrice: 2300.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة استلس دايرة صغيرة",
+                    number: "0287",
+                    category: "istales",
+                    image: "./images/287.png",
+                    description: "",
+                    commercialPrice: 1500.00,
+                    sellingPrice: 1800.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقطوقة استلس",
+                    number: "0288",
+                    category: "istales",
+                    image: "./images/288.png",
+                    description: "",
+                    commercialPrice: 1400.00,
+                    sellingPrice: 1600.00,
                     createdAt: new Date().toISOString()
                 },
 
