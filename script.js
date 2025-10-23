@@ -330,6 +330,7 @@ class FurnitureStore {
                     <select id="tablesTypeSelect" class="category-select">
                         <option value="all">كل الأنواع</option>
                         <option value="matbakh">مطبخ</option>
+                        <option value="thabta">ثابتة</option>
                         <option value="coffee">انترية</option>
                         <option value="dining">سفرة</option>
                         <option value="taqm">الاطقم</option>
@@ -345,7 +346,7 @@ class FurnitureStore {
                 tablesTypeSelect.addEventListener('change', (e) => {
                     container.dataset.activeValue = e.target.value;
                     this.filterByCategory('tables');
-                });
+                });             
             }
             return;
         }
@@ -355,8 +356,8 @@ class FurnitureStore {
                 <div class="category-select-wrapper">
                     <select id="storageTypeSelect" class="category-select">
                         <option value="all">كل الأنواع</option>
-                        <option value="mraya">مراية</option>
                         <option value="abyad">أبيض</option>
+                        <option value="mraya">مراية</option>
                         <option value="madhon">مدهون</option>
                     </select>
                 </div>
@@ -392,6 +393,29 @@ class FurnitureStore {
                 trabezatmadhonaTypeSelect.addEventListener('change', (e) => {
                     container.dataset.activeValue = e.target.value;
                     this.filterByCategory('trabezatmadhona');
+                });
+            }
+            return;
+        }
+        if (category === 'gazamatmadhona') {
+            container.style.display = 'block';
+            container.innerHTML = `
+                <div class="category-select-wrapper">
+                    <select id="gazamatmadhonaTypeSelect" class="category-select">
+                        <option value="all">كل الانواع</option>
+                        <option value="whadat">وحدات تخزين</option>
+                        <option value="formyka">فورميكا</option>
+                        <option value="kontar">كونتر</option>
+                    </select>
+                </div>
+            `;
+            container.dataset.activeSub = 'gazamatmadhonaType';
+            container.dataset.activeValue = 'all';
+            const gazamatmadhonaTypeSelect = document.getElementById('gazamatmadhonaTypeSelect');
+            if (gazamatmadhonaTypeSelect) {
+                gazamatmadhonaTypeSelect.addEventListener('change', (e) => {
+                    container.dataset.activeValue = e.target.value;
+                    this.filterByCategory('gazamatmadhona');
                 });
             }
             return;
@@ -444,6 +468,7 @@ class FurnitureStore {
             if (value === 'tv') return items.filter(i => nameIncludes(i, 'شاشة'));
             if (value === 'matbakh') return items.filter(i => nameIncludes(i, 'مطبخ'));
             if (value === 'coffee') return items.filter(i => nameIncludes(i, 'انترية'));
+            if (value === 'thabta') return items.filter(i => nameIncludes(i, 'قهوة') || nameIncludes(i, 'واحد دور') || nameIncludes(i, 'اتنين دور') || nameIncludes(i, ' الرحمة'));
             if (value === 'taqm') return items.filter(i => nameIncludes(i, 'طقم'));
             if (value === 'taqtoqa') return items.filter(i => nameIncludes(i, 'طقطوقة'));
             if (value === 'dining') return items.filter(i => nameIncludes(i, 'سفرة'));
@@ -459,6 +484,11 @@ class FurnitureStore {
             if (value === 'taqm') return items.filter(i => nameIncludes(i, 'طقم'));
             if (value === 'taqtoqa') return items.filter(i => nameIncludes(i, 'طقطوقة'));
             if (value === 'tv') return items.filter(i => nameIncludes(i, 'شاشة'));
+        }
+        if (category === 'gazamatmadhona' && subKey === 'gazamatmadhonaType') {
+            if (value === 'whadat') return items.filter(i => nameIncludes(i, ' ادراج') || nameIncludes(i, 'دولاب ') || nameIncludes(i, 'كانسور') || nameIncludes(i, 'الشريف') || nameIncludes(i, 'مراية'));
+            if (value === 'formyka') return items.filter(i => nameIncludes(i, 'فورميكا'));
+            if (value === 'kontar') return items.filter(i => nameIncludes(i, 'كونتر'));
         }
         if (category === 'istales' && subKey === 'istalesType') {
             if (value === 'taqm') return items.filter(i => nameIncludes(i, 'طقم'));
@@ -4203,7 +4233,7 @@ class FurnitureStore {
                 {
                     id: this.generateId(),
                     name: "",
-                    arabicName: "جزامة كونتر الحسيني بوحدة ادراج مدهون",
+                    arabicName: "جزامة كونتر الحسيني بوحدة تخزين مدهون",
                     number: "0280",
                     category: "gazamatmadhona",
                     image: "./images/280.png",
