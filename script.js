@@ -466,7 +466,7 @@ class FurnitureStore {
 
         if (category === 'tables' && subKey === 'tablesType') {
             if (value === 'tv') return items.filter(i => nameIncludes(i, 'شاشة'));
-            if (value === 'matbakh') return items.filter(i => nameIncludes(i, 'مطبخ'));
+            if (value === 'matbakh') return items.filter(i => nameIncludes(i, 'مطبخ') || nameIncludes(i, 'شنطة'));
             if (value === 'coffee') return items.filter(i => nameIncludes(i, 'انترية'));
             if (value === 'thabta') return items.filter(i => nameIncludes(i, 'قهوة') || nameIncludes(i, 'واحد دور') || nameIncludes(i, 'اتنين دور') || nameIncludes(i, ' الرحمة'));
             if (value === 'taqm') return items.filter(i => nameIncludes(i, 'طقم'));
@@ -831,6 +831,7 @@ class FurnitureStore {
             'berwaz': { en: 'berwaz', ar: 'براويز' },
             'hamelMoshaf': { en: 'hamelMoshaf', ar: 'حامل مصحف' },
             'istales': { en: 'istales', ar: 'استلس تيل'},
+            'regol': { en: 'regol', ar: 'الرجول'},
 
         };
         return categories[category] ? categories[category][this.currentLanguage] : category;
@@ -1305,7 +1306,7 @@ class FurnitureStore {
                 {
                     id: this.generateId(),
                     name: "",
-                    arabicName: "ترابيزة شنطة",
+                    arabicName: "ترابيزة شنطة فورميكا",
                     number: "0036",
                     category: "tables",
                     image: "./images/36.png",
@@ -4338,6 +4339,483 @@ class FurnitureStore {
                     sellingPrice: 1600.00,
                     createdAt: new Date().toISOString()
                 },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: " ترابيزة شنطة سدايب",
+                    number: "0289",
+                    category: "tables",
+                    image: "./images/289.png",
+                    description: "",
+                    commercialPrice: 600.00,
+                    sellingPrice: 650.00,
+                    createdAt: new Date().toISOString()
+                },
+
+
+
+
+
+
+
+                // خلي بالك دى الرجول
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 15سم 1",
+                    number: "1001",
+                    category: "regol",
+                    image: "./images/regol/1001.png",
+                    description: "",
+                    commercialPrice: 40.00,
+                    sellingPrice: 45.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 15سم 2",
+                    number: "1002",
+                    category: "regol",
+                    image: "./images/regol/1002.png",
+                    description: "",
+                    commercialPrice: 40.00,
+                    sellingPrice: 45.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 20سم 1",
+                    number: "1003",
+                    category: "regol",
+                    image: "./images/regol/1003.png",
+                    description: "",
+                    commercialPrice: 45.00,
+                    sellingPrice: 50.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 15سم 3",
+                    number: "1004",
+                    category: "regol",
+                    image: "./images/regol/1004.png",
+                    description: "",
+                    commercialPrice: 40.00,
+                    sellingPrice: 45.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 25سم",
+                    number: "1005",
+                    category: "regol",
+                    image: "./images/regol/1005.png",
+                    description: "",
+                    commercialPrice: 55.00,
+                    sellingPrice: 60.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 15سم 4",
+                    number: "1006",
+                    category: "regol",
+                    image: "./images/regol/1006.png",
+                    description: "",
+                    commercialPrice: 40.00,
+                    sellingPrice: 45.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 20سم 2",
+                    number: "1007",
+                    category: "regol",
+                    image: "./images/regol/1007.png",
+                    description: "",
+                    commercialPrice: 45.00,
+                    sellingPrice: 50.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 20سم 3",
+                    number: "1008",
+                    category: "regol",
+                    image: "./images/regol/1008.png",
+                    description: "",
+                    commercialPrice: 50.00,
+                    sellingPrice: 55.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب قرطاس مخروط محلي 15سم",
+                    number: "1009",
+                    category: "regol",
+                    image: "./images/regol/1009.png",
+                    description: "",
+                    commercialPrice: 40.00,
+                    sellingPrice: 45.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب قرطاس مخروط محلي 20سم",
+                    number: "1010",
+                    category: "regol",
+                    image: "./images/regol/1010.png",
+                    description: "",
+                    commercialPrice: 50.00,
+                    sellingPrice: 55.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب قرطاس مخروط محلي 30سم",
+                    number: "1011",
+                    category: "regol",
+                    image: "./images/regol/1011.png",
+                    description: "",
+                    commercialPrice: 70.00,
+                    sellingPrice: 75.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب قرطاس مخروط محلي 45سم",
+                    number: "1012",
+                    category: "regol",
+                    image: "./images/regol/1012.png",
+                    description: "",
+                    commercialPrice: 110.00,
+                    sellingPrice: 120.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب قرطاس مخروط محلي 65سم",
+                    number: "1013",
+                    category: "regol",
+                    image: "./images/regol/1013.png",
+                    description: "",
+                    commercialPrice: 160.00,
+                    sellingPrice: 170.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 20سم 4",
+                    number: "1014",
+                    category: "regol",
+                    image: "./images/regol/1014.png",
+                    description: "",
+                    commercialPrice: 45.00,
+                    sellingPrice: 50.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 15سم 5",
+                    number: "1015",
+                    category: "regol",
+                    image: "./images/regol/1015.png",
+                    description: "",
+                    commercialPrice: 40.00,
+                    sellingPrice: 45.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل فانوس استلس 15 سم",
+                    number: "1016",
+                    category: "regol",
+                    image: "./images/regol/1016.png",
+                    description: "",
+                    commercialPrice: 40.00,
+                    sellingPrice: 45.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل فانوس استلس 20سم",
+                    number: "1017",
+                    category: "regol",
+                    image: "./images/regol/1017.png",
+                    description: "",
+                    commercialPrice: 45.00,
+                    sellingPrice: 50.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل حلزونة زجزاج 15سم",
+                    number: "1018",
+                    category: "regol",
+                    image: "./images/regol/1018.png",
+                    description: "",
+                    commercialPrice: 55.00,
+                    sellingPrice: 60.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل حلزونة زجزاج 20سم",
+                    number: "1019",
+                    category: "regol",
+                    image: "./images/regol/1019.png",
+                    description: "",
+                    commercialPrice: 65.00,
+                    sellingPrice: 70.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 23سم محمل استلس",
+                    number: "1020",
+                    category: "regol",
+                    image: "./images/regol/1020.png",
+                    description: "",
+                    commercialPrice: 70.00,
+                    sellingPrice: 75.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب حلزونة 15سم",
+                    number: "1021",
+                    category: "regol",
+                    image: "./images/regol/1021.png",
+                    description: "",
+                    commercialPrice: 45.00,
+                    sellingPrice: 50.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب حلزونة 20سم",
+                    number: "1022",
+                    category: "regol",
+                    image: "./images/regol/1022.png",
+                    description: "",
+                    commercialPrice: 65.00,
+                    sellingPrice: 70.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 8سم محمل",
+                    number: "1023",
+                    category: "regol",
+                    image: "./images/regol/1023.png",
+                    description: "",
+                    commercialPrice: 25.00,
+                    sellingPrice: 30.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 8سم خفيف",
+                    number: "1024",
+                    category: "regol",
+                    image: "./images/regol/1024.png",
+                    description: "",
+                    commercialPrice: 15.00,
+                    sellingPrice: 20.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 6سم",
+                    number: "1025",
+                    category: "regol",
+                    image: "./images/regol/1025.png",
+                    description: "",
+                    commercialPrice: 15.00,
+                    sellingPrice: 20.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مخروط 8سم صغير سادة",
+                    number: "1026",
+                    category: "regol",
+                    image: "./images/regol/1026.png",
+                    description: "",
+                    commercialPrice: 15.00,
+                    sellingPrice: 20.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب ركنة مخروط  سادة",
+                    number: "1027",
+                    category: "regol",
+                    image: "./images/regol/1027.png",
+                    description: "",
+                    commercialPrice: 15.00,
+                    sellingPrice: 20.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مدقوق 30سم كبير",
+                    number: "1028",
+                    category: "regol",
+                    image: "./images/regol/1028.png",
+                    description: "",
+                    commercialPrice: 170.00,
+                    sellingPrice: 180.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مدقوق 20سم وسط",
+                    number: "1029",
+                    category: "regol",
+                    image: "./images/regol/1029.png",
+                    description: "",
+                    commercialPrice: 140.00,
+                    sellingPrice: 150.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "كعب مدقوق 15سم صغير",
+                    number: "1030",
+                    category: "regol",
+                    image: "./images/regol/1030.png",
+                    description: "",
+                    commercialPrice: 110.00,
+                    sellingPrice: 120.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية مدقوقة 20سم",
+                    number: "1031",
+                    category: "regol",
+                    image: "./images/regol/1031.png",
+                    description: "",
+                    commercialPrice: 80.00,
+                    sellingPrice: 85.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية مدقوقة مفرغة  20سم",
+                    number: "1032",
+                    category: "regol",
+                    image: "./images/regol/1032.png",
+                    description: "",
+                    commercialPrice: 110.00,
+                    sellingPrice: 120.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم 2 رجل كالبيتشر صغير",
+                    number: "1033",
+                    category: "regol",
+                    image: "./images/regol/1033.png",
+                    description: "",
+                    commercialPrice: 400.00,
+                    sellingPrice: 450.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم 2 رجل كالبيتشر كبير",
+                    number: "1034",
+                    category: "regol",
+                    image: "./images/regol/1034.png",
+                    description: "",
+                    commercialPrice: 500.00,
+                    sellingPrice: 550.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية معلقة 15سم",
+                    number: "1035",
+                    category: "regol",
+                    image: "./images/regol/1035.png",
+                    description: "",
+                    commercialPrice: 0.00,
+                    sellingPrice: 40.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية معلقة 20سم",
+                    number: "1036",
+                    category: "regol",
+                    image: "./images/regol/1036.png",
+                    description: "",
+                    commercialPrice: 0.00,
+                    sellingPrice: 45.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية مدقوقة جناح 15سم",
+                    number: "1037",
+                    category: "regol",
+                    image: "./images/regol/1037.png",
+                    description: "",
+                    commercialPrice: 70.00,
+                    sellingPrice: 75.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية مدقوقة طويلة 15سم",
+                    number: "1038",
+                    category: "regol",
+                    image: "./images/regol/1038.png",
+                    description: "",
+                    commercialPrice: 90.00,
+                    sellingPrice: 95.00,
+                    createdAt: new Date().toISOString()
+                },
+               
 
 
             ];
