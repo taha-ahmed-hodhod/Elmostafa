@@ -445,6 +445,30 @@ class FurnitureStore {
             }
             return;
         }
+        if (category === 'regol') {
+            container.style.display = 'block';
+            container.innerHTML = `
+                <div class="category-select-wrapper">
+                    <select id="regolTypeSelect" class="category-select">
+                        <option value="all">كل الانواع</option>
+                        <option value="taqm">الاطقم</option>
+                        <option value="ka3b">الكعوب</option>
+                        <option value="reglBezawya">رجل بزاوية</option>
+                        <option value="istales">الاستلس</option>
+                    </select>
+                </div>
+            `;
+            container.dataset.activeSub = 'regolType';
+            container.dataset.activeValue = 'all';
+            const regolTypeSelect = document.getElementById('regolTypeSelect');
+            if (regolTypeSelect) {
+                regolTypeSelect.addEventListener('change', (e) => {
+                    container.dataset.activeValue = e.target.value;
+                    this.filterByCategory('regol');
+                });
+            }
+            return;
+        }
 
         // No sub-filters for other categories for now
         clearContainer();
@@ -496,6 +520,12 @@ class FurnitureStore {
             if (value === 'morab3') return items.filter(i => nameIncludes(i, 'مربعة'));
             if (value === 'soqera') return items.filter(i => nameIncludes(i, 'صغيرة'));
             if (value === 'taqtoqa') return items.filter(i => nameIncludes(i, 'طقطوقة'));
+        }
+        if (category === 'regol' && subKey === 'regolType') {
+            if (value === 'taqm') return items.filter(i => nameIncludes(i, 'طقم'));
+            if (value === 'ka3b') return items.filter(i => nameIncludes(i, 'كعب'));
+            if (value === 'reglBezawya') return items.filter(i => nameIncludes(i, 'رجل بزاوية'));
+            if (value === 'istales') return items.filter(i => nameIncludes(i, 'رجل استلس'));
         }
 
         return items;
@@ -4815,7 +4845,781 @@ class FurnitureStore {
                     sellingPrice: 95.00,
                     createdAt: new Date().toISOString()
                 },
-               
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية مروحة 15سم",
+                    number: "1039",
+                    category: "regol",
+                    image: "./images/regol/1039.png",
+                    description: "",
+                    commercialPrice: 50.00,
+                    sellingPrice: 55.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية مروحة 20سم",
+                    number: "1040",
+                    category: "regol",
+                    image: "./images/regol/1040.png",
+                    description: "",
+                    commercialPrice: 60.00,
+                    sellingPrice: 65.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية سلسلة 15سم",
+                    number: "1041",
+                    category: "regol",
+                    image: "./images/regol/1041.png",
+                    description: "",
+                    commercialPrice: 60.00,
+                    sellingPrice: 65.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية سلسلة 20سم",
+                    number: "1042",
+                    category: "regol",
+                    image: "./images/regol/1042.png",
+                    description: "",
+                    commercialPrice: 80.00,
+                    sellingPrice: 85.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية وردة 15سم",
+                    number: "1043",
+                    category: "regol",
+                    image: "./images/regol/1043.png",
+                    description: "",
+                    commercialPrice: 60.00,
+                    sellingPrice: 65.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية وردة 20سم",
+                    number: "1044",
+                    category: "regol",
+                    image: "./images/regol/1044.png",
+                    description: "",
+                    commercialPrice: 80.00,
+                    sellingPrice: 85.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية فلة 15سم",
+                    number: "1045",
+                    category: "regol",
+                    image: "./images/regol/1045.png",
+                    description: "",
+                    commercialPrice: 40.00,
+                    sellingPrice: 45.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية فلة 20سم",
+                    number: "1046",
+                    category: "regol",
+                    image: "./images/regol/1046.png",
+                    description: "",
+                    commercialPrice: 50.00,
+                    sellingPrice: 55.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية ملكة",
+                    number: "1047",
+                    category: "regol",
+                    image: "./images/regol/1047.png",
+                    description: "",
+                    commercialPrice: 220.00,
+                    sellingPrice: 250.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية مدقوقة صغيرة",
+                    number: "1048",
+                    category: "regol",
+                    image: "./images/regol/1048.png",
+                    description: "",
+                    commercialPrice: 60.00,
+                    sellingPrice: 65.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول زلط صغير",
+                    number: "1049",
+                    category: "regol",
+                    image: "./images/regol/1049.png",
+                    description: "",
+                    commercialPrice: 110.00,
+                    sellingPrice: 130.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول زلط كبير",
+                    number: "1050",
+                    category: "regol",
+                    image: "./images/regol/1050.png",
+                    description: "",
+                    commercialPrice: 140.00,
+                    sellingPrice: 160.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول ايطالي 15سم",
+                    number: "1051",
+                    category: "regol",
+                    image: "./images/regol/1051.png",
+                    description: "",
+                    commercialPrice: 120.00,
+                    sellingPrice: 125.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول ايطالي 20سم",
+                    number: "1052",
+                    category: "regol",
+                    image: "./images/regol/1052.png",
+                    description: "",
+                    commercialPrice: 130.00,
+                    sellingPrice: 135.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول امبير 12سم",
+                    number: "1053",
+                    category: "regol",
+                    image: "./images/regol/1053.png",
+                    description: "",
+                    commercialPrice: 70.00,
+                    sellingPrice: 75.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول امبير 15سم",
+                    number: "1054",
+                    category: "regol",
+                    image: "./images/regol/1054.png",
+                    description: "",
+                    commercialPrice: 80.00,
+                    sellingPrice: 85.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول امبير 20سم",
+                    number: "1055",
+                    category: "regol",
+                    image: "./images/regol/1055.png",
+                    description: "",
+                    commercialPrice: 120.00,
+                    sellingPrice: 130.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول امبير 25سم",
+                    number: "1056",
+                    category: "regol",
+                    image: "./images/regol/1056.png",
+                    description: "",
+                    commercialPrice: 130.00,
+                    sellingPrice: 140.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول امبير 30سم",
+                    number: "1057",
+                    category: "regol",
+                    image: "./images/regol/1057.png",
+                    description: "",
+                    commercialPrice: 160.00,
+                    sellingPrice: 170.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول امبير 45سم",
+                    number: "1058",
+                    category: "regol",
+                    image: "./images/regol/1058.png",
+                    description: "",
+                    commercialPrice: 350.00,
+                    sellingPrice: 375.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول امبير 80سم",
+                    number: "1059",
+                    category: "regol",
+                    image: "./images/regol/1059.png",
+                    description: "",
+                    commercialPrice: 850.00,
+                    sellingPrice: 900.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول محلي 15سم",
+                    number: "1060",
+                    category: "regol",
+                    image: "./images/regol/1060.png",
+                    description: "",
+                    commercialPrice: 100.00,
+                    sellingPrice: 120.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول محلي 20سم",
+                    number: "1061",
+                    category: "regol",
+                    image: "./images/regol/1061.png",
+                    description: "",
+                    commercialPrice: 130.00,
+                    sellingPrice: 150.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول معلقة 15سم",
+                    number: "1062",
+                    category: "regol",
+                    image: "./images/regol/1062.png",
+                    description: "",
+                    commercialPrice: 110.00,
+                    sellingPrice: 120.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول معلقة 20سم",
+                    number: "1063",
+                    category: "regol",
+                    image: "./images/regol/1063.png",
+                    description: "",
+                    commercialPrice: 130.00,
+                    sellingPrice: 140.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول معلقة 30سم",
+                    number: "1064",
+                    category: "regol",
+                    image: "./images/regol/1064.png",
+                    description: "",
+                    commercialPrice: 200.00,
+                    sellingPrice: 220.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول معلقة 45سم",
+                    number: "1065",
+                    category: "regol",
+                    image: "./images/regol/1065.png",
+                    description: "",
+                    commercialPrice: 350.00,
+                    sellingPrice: 375.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول معلقة 80سم",
+                    number: "1066",
+                    category: "regol",
+                    image: "./images/regol/1066.png",
+                    description: "",
+                    commercialPrice: 900.00,
+                    sellingPrice: 1000.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول قرطاس 15سم",
+                    number: "1067",
+                    category: "regol",
+                    image: "./images/regol/1067.png",
+                    description: "",
+                    commercialPrice: 85.00,
+                    sellingPrice: 90.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول قرطاس 20سم",
+                    number: "1068",
+                    category: "regol",
+                    image: "./images/regol/1068.png",
+                    description: "",
+                    commercialPrice: 95.00,
+                    sellingPrice: 100.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول قرطاس 25سم",
+                    number: "1069",
+                    category: "regol",
+                    image: "./images/regol/1069.png",
+                    description: "",
+                    commercialPrice: 140.00,
+                    sellingPrice: 150.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول قرطاس 30سم",
+                    number: "1070",
+                    category: "regol",
+                    image: "./images/regol/1070.png",
+                    description: "",
+                    commercialPrice: 160.00,
+                    sellingPrice: 180.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول قرطاس 45سم",
+                    number: "1071",
+                    category: "regol",
+                    image: "./images/regol/1071.png",
+                    description: "",
+                    commercialPrice: 300.00,
+                    sellingPrice: 350.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول قرطاس 80سم",
+                    number: "1072",
+                    category: "regol",
+                    image: "./images/regol/1072.png",
+                    description: "",
+                    commercialPrice: 700.00,
+                    sellingPrice: 750.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية امبير 12سم",
+                    number: "1073",
+                    category: "regol",
+                    image: "./images/regol/1073.png",
+                    description: "",
+                    commercialPrice: 25.00,
+                    sellingPrice: 30.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية امبير 15سم",
+                    number: "1074",
+                    category: "regol",
+                    image: "./images/regol/1074.png",
+                    description: "",
+                    commercialPrice: 25.00,
+                    sellingPrice: 30.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية امبير 20سم",
+                    number: "1075",
+                    category: "regol",
+                    image: "./images/regol/1075.png",
+                    description: "",
+                    commercialPrice: 35.00,
+                    sellingPrice: 40.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل بزاوية لوكانز",
+                    number: "1076",
+                    category: "regol",
+                    image: "./images/regol/1076.png",
+                    description: "",
+                    commercialPrice: 60.00,
+                    sellingPrice: 65.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول فانوس 45سم",
+                    number: "1077",
+                    category: "regol",
+                    image: "./images/regol/1077.png",
+                    description: "",
+                    commercialPrice: .00,
+                    sellingPrice: .00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول فانوس 80سم",
+                    number: "1078",
+                    category: "regol",
+                    image: "./images/regol/1078.png",
+                    description: "",
+                    commercialPrice: .00,
+                    sellingPrice: .00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول مخروط 80سم(1)",
+                    number: "1079",
+                    category: "regol",
+                    image: "./images/regol/1079.png",
+                    description: "",
+                    commercialPrice: 1000.00,
+                    sellingPrice: 1100.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول مخروط 80سم دمياط",
+                    number: "1080",
+                    category: "regol",
+                    image: "./images/regol/1080.png",
+                    description: "",
+                    commercialPrice: 1000.00,
+                    sellingPrice: 1100.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول مخروط 80سم (2)",
+                    number: "1081",
+                    category: "regol",
+                    image: "./images/regol/1081.png",
+                    description: "",
+                    commercialPrice: 1000.00,
+                    sellingPrice: 1100.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول مخروط 80سم (3)",
+                    number: "1082",
+                    category: "regol",
+                    image: "./images/regol/1082.png",
+                    description: "",
+                    commercialPrice: 1000.00,
+                    sellingPrice: 1100.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول مخروط 45سم ",
+                    number: "1083",
+                    category: "regol",
+                    image: "./images/regol/1083.png",
+                    description: "",
+                    commercialPrice: 450.00,
+                    sellingPrice: 500.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم 2 رجل أويما 45سم",
+                    number: "1084",
+                    category: "regol",
+                    image: "./images/regol/1084.png",
+                    description: "",
+                    commercialPrice: 550.00,
+                    sellingPrice: 600.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم 2 رجل أويما 65سم",
+                    number: "1085",
+                    category: "regol",
+                    image: "./images/regol/1085.png",
+                    description: "",
+                    commercialPrice: .00,
+                    sellingPrice: .00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول طبلية 30سم خفيف",
+                    number: "1086",
+                    category: "regol",
+                    image: "./images/regol/1086.png",
+                    description: "",
+                    commercialPrice: 75.00,
+                    sellingPrice: 80.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول طبلية 30سم تقيل",
+                    number: "1087",
+                    category: "regol",
+                    image: "./images/regol/1087.png",
+                    description: "",
+                    commercialPrice: 85.00,
+                    sellingPrice: 90.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول مروحة 15سم",
+                    number: "1088",
+                    category: "regol",
+                    image: "./images/regol/1088.png",
+                    description: "",
+                    commercialPrice: 180.00,
+                    sellingPrice: 200.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول مروحة 20سم",
+                    number: "1089",
+                    category: "regol",
+                    image: "./images/regol/1089.png",
+                    description: "",
+                    commercialPrice: 200.00,
+                    sellingPrice: 220.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "طقم رجول مدقوق 45سم",
+                    number: "1090",
+                    category: "regol",
+                    image: "./images/regol/1090.png",
+                    description: "",
+                    commercialPrice: 550.00,
+                    sellingPrice: 600.00,
+                    createdAt: new Date().toISOString()
+                },
+
+
+
+
+
+
+                // باقي الرجول لو دخلت
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس قرطاس 10سم",
+                    number: "1114",
+                    category: "regol",
+                    image: "./images/regol/1114.png",
+                    description: "",
+                    commercialPrice: 42.00,
+                    sellingPrice: 42.00,
+                    createdAt: new Date().toISOString()
+                },
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس قرطاس 15سم",
+                    number: "1115",
+                    category: "regol",
+                    image: "./images/regol/1115.png",
+                    description: "",
+                    commercialPrice: 47.00,
+                    sellingPrice: 47.00,
+                    createdAt: new Date().toISOString()
+                },
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس قرطاس 20سم",
+                    number: "1116",
+                    category: "regol",
+                    image: "./images/regol/1116.png",
+                    description: "",
+                    commercialPrice: 50.00,
+                    sellingPrice: 50.00,
+                    createdAt: new Date().toISOString()
+                },
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس كعب حصان 15سم",
+                    number: "1117",
+                    category: "regol",
+                    image: "./images/regol/1117.png",
+                    description: "",
+                    commercialPrice: 60.00,
+                    sellingPrice: 60.00,
+                    createdAt: new Date().toISOString()
+                },
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس كعب حصان 20سم",
+                    number: "1118",
+                    category: "regol",
+                    image: "./images/regol/1118.png",
+                    description: "",
+                    commercialPrice: 65.00,
+                    sellingPrice: 65.00,
+                    createdAt: new Date().toISOString()
+                },
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس كعب حصان مفرغ 20سم",
+                    number: "1119",
+                    category: "regol",
+                    image: "./images/regol/1119.png",
+                    description: "",
+                    commercialPrice: 50.00,
+                    sellingPrice: 50.00,
+                    createdAt: new Date().toISOString()
+                },
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس زاوية تقيلة 10سم",
+                    number: "1120",
+                    category: "regol",
+                    image: "./images/regol/1120.png",
+                    description: "",
+                    commercialPrice: 40.00,
+                    sellingPrice: 40.00,
+                    createdAt: new Date().toISOString()
+                },
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس زاوية تقيلة 15سم",
+                    number: "1121",
+                    category: "regol",
+                    image: "./images/regol/1121.png",
+                    description: "",
+                    commercialPrice: 45.00,
+                    sellingPrice: 45.00,
+                    createdAt: new Date().toISOString()
+                },
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس زاوية تقيلة 20سم",
+                    number: "1122",
+                    category: "regol",
+                    image: "./images/regol/1122.png",
+                    description: "",
+                    commercialPrice: 55.00,
+                    sellingPrice: 55.00,
+                    createdAt: new Date().toISOString()
+                },
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس نجمة 15سم",
+                    number: "1123",
+                    category: "regol",
+                    image: "./images/regol/1123.png",
+                    description: "",
+                    commercialPrice: 65.00,
+                    sellingPrice: 65.00,
+                    createdAt: new Date().toISOString()
+                },
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس ستارة 10سم",
+                    number: "1124",
+                    category: "regol",
+                    image: "./images/regol/1124.png",
+                    description: "",
+                    commercialPrice: 60.00,
+                    sellingPrice: 60.00,
+                    createdAt: new Date().toISOString()
+                },
+               {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "رجل استلس ستارة 15سم",
+                    number: "1125",
+                    category: "regol",
+                    image: "./images/regol/1125.png",
+                    description: "",
+                    commercialPrice: 65.00,
+                    sellingPrice: 65.00,
+                    createdAt: new Date().toISOString()
+                },
 
 
             ];
