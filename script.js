@@ -862,6 +862,7 @@ class FurnitureStore {
             'hamelMoshaf': { en: 'hamelMoshaf', ar: 'حامل مصحف' },
             'istales': { en: 'istales', ar: 'استلس تيل'},
             'regol': { en: 'regol', ar: 'الرجول'},
+            'hlaya': { en: 'hlaya', ar: 'الحلايا'},
 
         };
         return categories[category] ? categories[category][this.currentLanguage] : category;
@@ -4379,6 +4380,30 @@ class FurnitureStore {
                     description: "",
                     commercialPrice: 600.00,
                     sellingPrice: 650.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "شماعة حليبة سويد",
+                    number: "0290",
+                    category: "storage",
+                    image: "./images/290.png",
+                    description: "",
+                    commercialPrice: 350.00,
+                    sellingPrice: 370.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "ترابيزة انترية صوابع تقيلة هدهد",
+                    number: "0291",
+                    category: "tables",
+                    image: "./images/291.png",
+                    description: "",
+                    commercialPrice: 900.00,
+                    sellingPrice: 950.00,
                     createdAt: new Date().toISOString()
                 },
 
