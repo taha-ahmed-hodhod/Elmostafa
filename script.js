@@ -1042,8 +1042,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/11.png",
                     description: "",
-                    commercialPrice: 700.00,
-                    sellingPrice: 750.00,
+                    commercialPrice: 0.00,
+                    sellingPrice: 0.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1486,8 +1486,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "./images/48.png",
                     description: "",
-                    commercialPrice: 2200.00,
-                    sellingPrice: 2500.00,
+                    commercialPrice: 3500.00,
+                    sellingPrice: 3800.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -5645,6 +5645,12 @@ class FurnitureStore {
                     sellingPrice: 65.00,
                     createdAt: new Date().toISOString()
                 },
+
+
+
+
+
+
 
 
 
