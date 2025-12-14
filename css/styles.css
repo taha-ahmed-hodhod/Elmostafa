@@ -355,6 +355,62 @@ body[dir="rtl"] {
     justify-content: center;
 }
 
+/* Reset Data Notification */
+.reset-notification {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 2000;
+    opacity: 0;
+    transform: translateX(400px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+.reset-notification.show {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.reset-notification-content {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px var(--shadow-medium);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-right: 4px solid var(--accent-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    max-width: 350px;
+}
+
+.reset-notification-content i {
+    color: var(--accent-primary);
+    font-size: 1.1rem;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* RTL Support for Notification */
+body[dir="rtl"] .reset-notification {
+    right: auto;
+    left: 20px;
+}
+
+body[dir="rtl"] .reset-notification-content {
+    border-right: none;
+    border-left: 4px solid var(--accent-primary);
+}
+
+
 /* Main Content */
 main {
     min-height: calc(100vh - 80px);
@@ -1073,6 +1129,25 @@ body[dir="rtl"] .form-actions {
         flex-direction: column;
     }
 
+    .reset-notification {
+        top: 120px;
+        right: 10px;
+        left: 10px;
+        max-width: calc(100% - 20px);
+    }
+
+    .reset-notification-content {
+        font-size: 0.8rem;
+        padding: 10px 16px;
+        max-width: 100%;
+    }
+
+    body[dir="rtl"] .reset-notification {
+        left: 10px;
+        right: 10px;
+    }
+
+
     .hero h2 {
         font-size: 2rem;
     }
@@ -1147,7 +1222,7 @@ font-size: 0.56rem;
     padding: 0;
 }
 .item-card{
-    padding: 7px 7px;
+        padding: 10px 10px 15px;
 }
 .item-prices {
     margin-top: 1rem;
@@ -1329,5 +1404,3 @@ font-size: 0.56rem;
     color: #721c24;
     border: 1px solid #f5c6cb;
 }
-
-
