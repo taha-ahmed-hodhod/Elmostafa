@@ -150,6 +150,9 @@ class FurnitureStore {
             });
         }
 
+        // Show reset tooltip on page load, then hide it after 7 seconds
+        this.showResetTooltip();
+
         // Close modal when clicking outside
         window.addEventListener('click', (e) => {
             const modal = document.getElementById('itemModal');
@@ -809,6 +812,21 @@ class FurnitureStore {
         }
     }
 
+    showResetTooltip() {
+        const notification = document.getElementById('resetDataNotification');
+        if (notification) {
+            // Show notification immediately
+            setTimeout(() => {
+                notification.classList.add('show');
+            }, 500);
+
+            // Hide after 7 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 5000);
+        }
+    }
+
     toggleLanguage() {
         this.currentLanguage = this.currentLanguage === 'en' ? 'ar' : 'en';
         this.setLanguage(this.currentLanguage);
@@ -858,7 +876,7 @@ class FurnitureStore {
             'fedyat': { en: 'fedyat', ar: 'فضية' },
             'trabezatmadhona': { en: 'trabezatmadhona', ar: 'ترابيزات مدهونة' },
             'gazamatmadhona': { en: 'gazamatmadhona', ar: 'جزامات مدهونة' },
-            'berwaz': { en: 'berwaz', ar: 'براويز' },
+            'berwaz': { en: 'berwaz', ar: 'براويز و مرايات' },
             'hamelMoshaf': { en: 'hamelMoshaf', ar: 'حامل مصحف' },
             'istales': { en: 'istales', ar: 'استلس تيل'},
             'regol': { en: 'regol', ar: 'الرجول'},
@@ -1042,8 +1060,8 @@ class FurnitureStore {
                     category: "chairs",
                     image: "./images/11.png",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 750.00,
+                    sellingPrice: 800.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1079,7 +1097,7 @@ class FurnitureStore {
                     image: "./images/14.png",
                     description: "",
                     commercialPrice: 725.00,
-                    sellingPrice: 800.00,
+                    sellingPrice: 850.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1091,7 +1109,7 @@ class FurnitureStore {
                     image: "./images/15.png",
                     description: "",
                     commercialPrice: 675.00,
-                    sellingPrice: 700.00,
+                    sellingPrice: 750.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -1481,11 +1499,11 @@ class FurnitureStore {
                 {
                     id: this.generateId(),
                     name: "",
-                    arabicName: "ترابيزة سفرة دايرة",
+                    arabicName: "ترابيزة سفرة دايرة بزلعة ",
                     number: "0048",
                     category: "tables",
                     image: "./images/48.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 3500.00,
                     sellingPrice: 3800.00,
                     createdAt: new Date().toISOString()
@@ -2469,7 +2487,7 @@ class FurnitureStore {
                     number: "0130",
                     category: "tables",
                     image: "./images/130.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 1600.00,
                     sellingPrice: 1800.00,
                     createdAt: new Date().toISOString()
@@ -2505,7 +2523,7 @@ class FurnitureStore {
                     number: "0133",
                     category: "tables",
                     image: "./images/133.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 1850.00,
                     sellingPrice: 2000.00,
                     createdAt: new Date().toISOString()
@@ -2541,7 +2559,7 @@ class FurnitureStore {
                     number: "0136",
                     category: "tables",
                     image: "./images/136.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 2200.00,
                     sellingPrice: 2400.00,
                     createdAt: new Date().toISOString()
@@ -2565,7 +2583,7 @@ class FurnitureStore {
                     number: "0138",
                     category: "tables",
                     image: "./images/138.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 1100.00,
                     sellingPrice: 1200.00,
                     createdAt: new Date().toISOString()
@@ -2577,7 +2595,7 @@ class FurnitureStore {
                     number: "0139",
                     category: "tables",
                     image: "./images/139.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 1100.00,
                     sellingPrice: 1200.00,
                     createdAt: new Date().toISOString()
@@ -2877,7 +2895,7 @@ class FurnitureStore {
                     number: "0164",
                     category: "tables",
                     image: "./images/164.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 350.00,
                     sellingPrice: 400.00,
                     createdAt: new Date().toISOString()
@@ -2909,11 +2927,11 @@ class FurnitureStore {
                 {
                     id: this.generateId(),
                     name: "",
-                    arabicName: "ترابيزة سفرة دايرة 4 كرسي",
+                    arabicName: "ترابيزة سفرة دايرة طبق ليزر",
                     number: "0167",
                     category: "tables",
                     image: "./images/167.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 2300.00,
                     sellingPrice: 2500.00,
                     createdAt: new Date().toISOString()
@@ -2926,8 +2944,8 @@ class FurnitureStore {
                     category: "tables",
                     image: "",
                     description: "",
-                    commercialPrice: 0.00,
-                    sellingPrice: 0.00,
+                    commercialPrice: 200.00,
+                    sellingPrice: 2000.00,
                     createdAt: new Date().toISOString()
                 },
                 {
@@ -2985,7 +3003,7 @@ class FurnitureStore {
                     number: "0173",
                     category: "tables",
                     image: "./images/173.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 2000.00,
                     sellingPrice: 2100.00,
                     createdAt: new Date().toISOString()
@@ -3033,7 +3051,7 @@ class FurnitureStore {
                     number: "0177",
                     category: "tables",
                     image: "./images/177.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 1800.00,
                     sellingPrice: 1900.00,
                     createdAt: new Date().toISOString()
@@ -3165,7 +3183,7 @@ class FurnitureStore {
                     number: "0188",
                     category: "boxs",
                     image: "./images/188.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 2300.00,
                     sellingPrice: 2500.00,
                     createdAt: new Date().toISOString()
@@ -3309,7 +3327,7 @@ class FurnitureStore {
                     number: "0200",
                     category: "boxs",
                     image: "./images/200.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 2600.00,
                     sellingPrice: 2800.00,
                     createdAt: new Date().toISOString()
@@ -3321,7 +3339,7 @@ class FurnitureStore {
                     number: "0201",
                     category: "boxs",
                     image: "./images/201.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 2300.00,
                     sellingPrice: 2500.00,
                     createdAt: new Date().toISOString()
@@ -4125,7 +4143,7 @@ class FurnitureStore {
                     number: "0268",
                     category: "tables",
                     image: "./images/268.png",
-                    description: "",
+                    description: "خلصان",
                     commercialPrice: 1700.00,
                     sellingPrice: 1800.00,
                     createdAt: new Date().toISOString()
@@ -4404,6 +4422,18 @@ class FurnitureStore {
                     description: "",
                     commercialPrice: 900.00,
                     sellingPrice: 950.00,
+                    createdAt: new Date().toISOString()
+                },
+                {
+                    id: this.generateId(),
+                    name: "",
+                    arabicName: "مراية استاند زان",
+                    number: "0291",
+                    category: "berwaz",
+                    image: "./images/292.png",
+                    description: "",
+                    commercialPrice: 1500.00,
+                    sellingPrice: 1600.00,
                     createdAt: new Date().toISOString()
                 },
 
@@ -6355,6 +6385,7 @@ class FurnitureStore {
                     sellingPrice: 27.00,
                     createdAt: new Date().toISOString()
                 },
+                
                 
             ];
 
