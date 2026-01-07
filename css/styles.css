@@ -409,6 +409,110 @@ body[dir="rtl"] .reset-notification-content {
     border-right: none;
     border-left: 4px solid var(--accent-primary);
 }
+/* Main Cards Container */
+.main-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.main-card {
+    background: var(--bg-secondary);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 20px var(--shadow-light);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+}
+
+.main-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent-gradient);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.main-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px var(--shadow-medium);
+    border-color: var(--accent-primary);
+}
+
+.main-card:hover::before {
+    transform: scaleX(1);
+}
+
+.main-card-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--accent-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.main-card-icon i {
+    font-size: 1.9rem;
+    color: white;
+}
+
+.main-card:hover .main-card-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.main-card-title {
+    font-size: 1.47rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    color: var(--text-primary);
+}
+
+.main-card-description {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin: 0.5rem 0;
+}
+
+.main-card-arrow {
+    margin-top: auto;
+    color: var(--accent-primary);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.main-card:hover .main-card-arrow {
+    transform: translateX(-10px);
+}
+
+[data-theme="dark"] .main-card {
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .main-card:hover {
+    border-color: var(--accent-secondary);
+}
 
 
 /* Main Content */
