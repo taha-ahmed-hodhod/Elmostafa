@@ -6,84 +6,66 @@
     <title>المصطفى هدهد</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="shortcut icon" href="./images/Segment_٢٠٢٥٠٩٠٦_١٣٣٩٤٠٧٥٠.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-brand" >
-                <h1> <img src="./images/1000230188-removebg-preview.png" alt="" width="70px"> <span class="brand-text">المصطفى هدهد</span></h1>
+                <h1> <img src="./images/logo.png" alt="" width="70px"> <span class="brand-text">المصطفى هدهد</span></h1>
             </div>
             <div class="nav-links">
                 <a href="#home" class="nav-link active">الرئيسية</a>
-                <a href="#dashboard" class="nav-link">Dashboard</a>
                 <button id="darkModeToggle" class="nav-link dark-mode-toggle" type="button" title="تبديل الوضع المظلم">
                     <i class="fas fa-moon"></i>
                 </button>
-                <button id="resetDataBtn" class="nav-link btn-reset" type="button"><i class="fa-solid fa-rotate"></i></button>
             </div>
         </nav>
     </header>
 
-    <!-- Reset Data Notification -->
-    <div id="resetDataNotification" class="reset-notification">
-        <div class="reset-notification-content">
-            <i class="fa-solid fa-rotate"></i>
-            <span>برجاء تحديث البيانات لتجديد العناصر والاسعار</span>
-        </div>
-    </div>
 
-    <main>
+
+    <main style="min-height: 100%;">
         <!-- Home Section -->
         <section id="home" class="section active">
             <div class="hero">
             </div>
 
             <!-- Search Bar -->
-            <div class="search-container">
+            <div class="search-container" style="display: none;">
                 <div class="search-box">
                     <i class="fas fa-search"></i>
                     <input type="text" id="searchInput" placeholder="البحث بالاسم أو الرقم الخاص...">
                 </div>
             </div>
+            <!-- Main Cards -->
+            <div class="main-cards-container">
+                <a href="branch-1.html" class="main-card">
+                    <div class="main-card-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h2 class="main-card-title">الفرع الأول - السلخانة</h2>
+                    <p class="main-card-description">عرض المنتجات والسلع المتاحة</p>
+                    <div class="main-card-arrow">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                </a>
 
-            <!-- Category Filter -->
-            <div class="category-filter">
-                <div class="category-select-wrapper">
-                    <select id="categorySelect" class="category-select">
-                        <option value="all">جميع العناصر</option>
-                        <option value="chairs">كراسي</option>
-                        <option value="tables">الترابيزات</option>
-                        <option value="sofas">السلالم</option>
-                        <option value="storage">الشماعات</option>
-                        <option value="beds">السراير</option>
-                        <option value="desk">المكاتب</option>
-                        <option value="boxs">الجزامات</option>
-                        <option value="fedyat">فضية</option>
-                        <option value="trabezatmadhona">ترابيزات مدهونة</option>
-                        <option value="gazamatmadhona">جزامات مدهونة</option>
-                        <option value="berwaz">براويز و مرايات</option>
-                        <option value="hamelMoshaf">حامل مصحف</option>
-                        <option value="istales">استلس تيل</option>
-                        <option value="regol"> الرجول</option>
-                        <option value="hlaya"> الحلايا</option>
-                    </select>
-                    
-                    <!-- Sub-filters container (accordion-like) -->
-                    <div id="subFiltersContainer" style="display: none; margin-top: 10px;"></div>
-                </div>
+                <a href="branch-2.html" class="main-card">
+                    <div class="main-card-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h2 class="main-card-title">الفرع الثاني - وسط البلد
+                    </h2>
+                    <p class="main-card-description">عرض المنتجات والسلع المتاحة</p>
+                    <div class="main-card-arrow">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                </a>
             </div>
-            <!-- Items Grid -->
-            <div class="items-grid" id="itemsGrid">
- 
 
-
-                <!-- Items will be dynamically loaded here -->
-            </div>
-            <div class="load-more-container">
-                <button id="loadMoreBtn" class="btn btn-secondary" type="button" style="display: none;">تحميل المزيد</button>
-            </div>
+            
         </section>
 
         <!-- Dashboard Section -->
@@ -121,7 +103,9 @@
                 <nav class="footer-links" aria-label="روابط سريعة">
                     <h4>روابط سريعة</h4>
                     <ul>
-                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="branch-1.html">فرع - السلخانة</a></li>
+                        <li><a href="branch-2.html">فرع - وسط البلد</a></li>
                     </ul>
                 </nav>
                 <div class="footer-contact">
@@ -231,6 +215,6 @@
     <button id="scrollToTopBtn" title="العودة للأعلى" aria-label="العودة للأعلى">
         <i class="fas fa-arrow-up"></i>
     </button>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
